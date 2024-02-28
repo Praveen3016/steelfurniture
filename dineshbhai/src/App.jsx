@@ -11,9 +11,7 @@ function App() {
           </div>
           <div className="lists">
             <ul>
-              <li>KNOW US
-                {/* <i style="color: gray;" className="fa-solid fa-angle-down"></i> */}
-              </li>
+              <li>HOME</li>
               <li>SOLUTION  SERVICES</li>
               <li>CURRENT OPENINGS</li>
               <li>@ WORK</li>
