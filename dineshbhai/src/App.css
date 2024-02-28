@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 .nav {
   font-family: Nunito Sans, sans-serif;
@@ -26,8 +27,8 @@
   font-size: 0.9rem;
   transition: 0.5s ;
 }
-.nav ul li:hover {
-  color: rgb(255, 111, 0);
+.listt:hover {
+  color: rgb(255, 111, 0) !important;
   cursor: pointer;
 }
 .nav .contact button,
@@ -44,19 +45,22 @@
 .nav .contact button:hover {
   background-color: #23282d;
 }
-main {
-  padding: 3rem 0;
-}
+
 #sec1 {
+  background-image:linear-gradient(to right,rgba(3, 3, 28, 0.9),rgba(66, 66, 66, 0.434),rgba(22, 19, 18, 0.151)), url("../public/image/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   display: flex;
   justify-content: space-evenly;
   padding: 0 0 2rem 0;
+  height: 100vh;
 }
+
 #sec1 .part1 {
-  width: 50%;
+  width: 100%;
   padding: 1rem 2.9rem;
   flex-wrap: wrap;
-  color: rgba(82, 82, 82, 0.918);
 }
 #sec1 .part1 span {
   font-weight: 800;
@@ -101,10 +105,10 @@ main {
   font-weight: 650;
 }
 #sec2 h2,#sec3 h2,#sec4 h2 {
-  text-align: center;
+
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 #sec2 #p2 {
   text-align: center;
