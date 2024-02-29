@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <header>
-        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100  ">
+        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
           <Container>
             <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
