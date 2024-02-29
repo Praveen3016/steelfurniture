@@ -149,34 +149,6 @@ function App() {
                       </MDBCol>
                     </MDBRow>
                     <button className='mb-4' size='lg'>Submit</button>
-              {/* <div  className='col-xl-7 col-sm-8 col-md-11  ' >
-                <MDBCard >
-                  <MDBCardBody  >
-                    <form action="https://formspree.io/f/mbjnoddw" method='post'>
-                      <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
-                      <MDBRow>
-                        <MDBCol md='6'>
-                          <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' name='name' />
-                        </MDBCol>
-                        <MDBCol md='6'>
-                          <MDBInput wrapperClass='mb-4' label='phone number' size='lg' id='form2' type='text' name='phone number' />
-                        </MDBCol>
-                      </MDBRow>
-
-                      <MDBRow>
-
-                        <MDBCol md='12'>
-                          <MDBInput wrapperClass='mb-4' label='address' size='lg' id='form3' type='text' name='address' />
-                        </MDBCol>
-                      </MDBRow>
-                      <MDBRow>
-                        <MDBCol md='12'>
-                        <MDBTextArea label='message'id='validationTextarea'placeholder='Required example textarea'required/>
-                        </MDBCol>
-                      </MDBRow>
-                      <button className='mt-4' size='lg'>Submit</button>
-                    </form>
->>>>>>> 07fa26329c7e12234f591488de24886f46cbc6bb */}
                   </MDBCardBody>
                 </MDBCard>
               </div>
@@ -186,8 +158,8 @@ function App() {
         </section>
 
       </main>
-      <footer>
 
+      <footer>
 
         <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -217,13 +189,13 @@ function App() {
             </div>
           </section>
 
-          <section className=''>
+          <section className='foot-logo'>
             <MDBContainer className='text-center text-md-start mt-5'>
               <MDBRow className='mt-3'>
                 <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                   <h6 className='text-uppercase fw-bold mb-4'>
-                    <MDBIcon icon="gem" className="me-3" />
-                    Company name
+                    <img width={30} height={25} src="public\image\logo.png" className='' alt="" />
+                    Kheteshwar steel factory 
                   </h6>
                   <p>
                     Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
