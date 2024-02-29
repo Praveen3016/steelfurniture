@@ -2,15 +2,21 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from 'react';
 import { MDBFooter, MDBIcon } from 'mdb-react-ui-kit';
+<<<<<<< HEAD
+=======
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { FaWhatsapp } from "react-icons/fa";
+
+>>>>>>> 68bc9fcd8359f53ed994c294c87938a9a302f608
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBTextArea,
 }
   from 'mdb-react-ui-kit';
 import './App.css'
@@ -18,52 +24,81 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
+<<<<<<< HEAD
       
+=======
+      <header>
+        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
+          <Container>
+            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" className='' alt="" /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/> 
+                        <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
+                <div className='d-flex gap-5 m-auto '>
+                  <Nav.Link className='listt' href="#home">Home</Nav.Link>
+                  <Nav.Link className='listt' href="#link">About</Nav.Link>
+                  <Nav.Link className='listt' href="#link">product</Nav.Link>
+                  <Nav.Link className='listt' href="#link">Service</Nav.Link>
+                </div>
+                <div className='contact'>
+                  <button>Contact us</button>
+                </div>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </header>
+>>>>>>> 68bc9fcd8359f53ed994c294c87938a9a302f608
       <main>
+      <FaWhatsapp />
+
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className='d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  '>
 
-              <h1 className='text-white heading mb-4 fw-bold'>Kheteshvar steel factory .</h1>
+              <h1 className='text-white heading mb-4 fw-bold'>Kheteshwar steel factory .</h1>
               <p className='text-white    ' >Self-service is now becoming an expectation in the B2B metal manufacturing industry. Make buying from your business easy with built-in CPQ, plus a 2D or 3D visualizer and guided selling..</p>
               <button className=''>All Products</button>
             </div>
           </div>
+         
         </section>
         <section id="sec2">
           <p id="p1">_WHAT WE OFFER_</p>
           <h2>Services We Offer</h2>
           <p id="p2">We are specialists in information technologies and we apply our full range of talent to creating the perfect solution for each client's needs.</p>
           <div className="cards container row   ">
-            <div id="" className='col-sm-3 px-2'>
-              <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
+            <div id="" className='col-sm-3  px-2'>
+              <div  id="card1">
+             
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='w-100 img-fluid ' src="https://th.bing.com/th/id/OIP.DpxZPUDsx0SSji0I-0CqugHaEK?rs=1&pid=ImgDetMain" alt=""/>
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
             <div id="" className='col-sm-3 px-2'>
               <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='w-100 img-fluid ' src="https://th.bing.com/th/id/R.50de7787b0db8aac2ab29988f0beebe2?rik=qaZI0DuM2dWSTg&riu=http%3a%2f%2fadonaisteel.com.au%2fwp-content%2fgallery%2fadonai-steel-security-doors-gallery%2fAdonai-Steel-Security-Doors-2.jpg&ehk=6XIoOdrRLh5U2GLZIRucORaTr%2bfTTbNPA2krWuyWytg%3d&risl=&pid=ImgRaw&r=0" alt="" />
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
-            <div id="" className='col-sm-3 px-2'>
+            <div id="" className='col-sm-3 px-2 h-50'>
               <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
+              
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='w-100 img-fluid ' src="https://www.recruiter.co.uk/sites/default/files/media/image/2017/steel_worker_shutterstock_126241472.jpg" alt="" />
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
-            <div id="" className='col-sm-3 px-2'>
+            <div id="" className='col-sm-3 h-50 px-2'>
               <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='img-fluid w-100 ' src="https://th.bing.com/th/id/OIP.1N_ALN2h2sz60WzgpYg95wHaE7?rs=1&pid=ImgDetMain" alt="" />
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
@@ -79,7 +114,7 @@ function App() {
               </div>
               <div className="col-sm-6 d-flex align-items-center ">
                 <div>
-                  <h2>Welcome to KFS Steel Furniture</h2>
+                  <h2>Welcome to KSF Steel Factory</h2>
                   <p id="sec3p3">We seamlessly merge three key components – Website, Mobile Application, and Software technology. This is the main factor that sets us apart from our competition and allows us to deliver a specialist in our services.</p>
                   <div>
                     <button >View More</button>
@@ -94,10 +129,11 @@ function App() {
           <MDBContainer fluid >
             <MDBRow className='justify-content-center align-items-center '>
               <div className='col-sm-5' >
-                <h3>Contact with use throw</h3>
-                <p><span>Mobile No.  </span>:  +919351990014</p>
-                <p><span>Email Id </span>: tilakkumar@gmail.com</p>
-                <p><span>Address : </span> sirohi rampura near by high secondary school main road rampura .</p>
+                <h3>Contact us through</h3>
+                <p><span><b>Mobile No. </b> </span>:  +919351990014</p>
+                <p><span><b>Email Id </b></span>: tilakkumar@gmail.com</p>
+                <p><span><b>Address : </b></span> sirohi rampura near by high secondary school 
+                main <span id='spn' >road rampura .</span></p>
               </div>
               <div  className='col-xl-7 col-sm-8 col-md-11  ' >
                 <MDBCard >
@@ -126,6 +162,7 @@ function App() {
                       </MDBRow>
                       <button className='mt-4' size='lg'>Submit</button>
                     </form>
+>>>>>>> 07fa26329c7e12234f591488de24886f46cbc6bb */}
                   </MDBCardBody>
                 </MDBCard>
               </div>
@@ -141,7 +178,7 @@ function App() {
         <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
             <div className='me-5 d-none d-lg-block'>
-              <span>Get connected with us on social networks:</span>
+              <span>Get connected with us on Social Media :</span>
             </div>
 
             <div>
