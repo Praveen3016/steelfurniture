@@ -25,7 +25,7 @@ function App() {
       <header>
         <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
           <Container>
-            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" alt="" /></Navbar.Brand>
+            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" className='' alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
