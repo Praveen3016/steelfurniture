@@ -2,10 +2,6 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from 'react';
 import { MDBFooter, MDBIcon } from 'mdb-react-ui-kit';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import {
   MDBBtn,
   MDBContainer,
@@ -22,27 +18,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <header>
-        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
-          <Container>
-            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" className='' alt="" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
-                <div className='d-flex gap-5 m-auto '>
-                  <Nav.Link className='listt' href="#home">Home</Nav.Link>
-                  <Nav.Link className='listt' href="#link">About</Nav.Link>
-                  <Nav.Link className='listt' href="#link">product</Nav.Link>
-                  <Nav.Link className='listt' href="#link">Service</Nav.Link>
-                </div>
-                <div className='contact'>
-                  <button>Contact us</button>
-                </div>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </header>
+      
       <main>
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">

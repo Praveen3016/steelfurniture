@@ -50,7 +50,7 @@
   background-image:linear-gradient(to right,rgba(3, 3, 28, 0.9),rgba(66, 66, 66, 0.434),rgba(22, 19, 18, 0.151)), url("../public/image/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   display: flex;
   justify-content: space-evenly;
   padding: 0 0 2rem 0;
@@ -117,7 +117,6 @@
 }
 #sec2 .cards {
   width: 100%;
- 
   padding-top: 2rem;
 }
 #sec2 .cards #card1 {
@@ -126,14 +125,15 @@
   border-radius: 10px;
   transition: 0.5s ;
   margin-bottom: 15px;
+  padding: 5px;
 }
 #sec2 .cards #card1:hover,.right .boxes .gr1:hover  {
   background-color: rgba(255, 160, 122, 0.076);
   cursor: pointer;
 }
 #sec2 .cards #card1 img {
-  padding: 0.7rem 0 0.2rem 0.7rem;
   width: 5.3rem;
+  height: 200px;
 }
 #sec2 .cards #card1 #p3 {
   color: rgb(255, 111, 0);
@@ -201,5 +201,14 @@
   width: 70%;
   text-align: center;
   padding: auto;
+}
+.navbar-scroll {
+  background-color: #333; /* Set your desired background color */
+  padding: 15px; /* Set your desired padding */
+  /* Add additional styles for the scrolled state */
+}
+
+#sec4 .col-sm-5 #spn{
+  margin-left: 4.5rem;
 }
 
