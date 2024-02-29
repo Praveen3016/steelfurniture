@@ -44,7 +44,7 @@ function App() {
         </Navbar>
       </header>
       <main>
-         <section id="sec1">
+        <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className='d-flex flex-column w-50 ps-5  '>
 
@@ -61,39 +61,39 @@ function App() {
           <div className="cards container row   ">
             <div id="" className='col-sm-3 px-2'>
               <div className=' ' id="card1">
-              <img src="4.svg" alt="" />
-              <p id="p3" >01</p> 
-              <p id="p3" >Jewelry Software</p>
-              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
             <div id="" className='col-sm-3 px-2'>
               <div className=' ' id="card1">
-              <img src="4.svg" alt="" />
-              <p id="p3" >01</p> 
-              <p id="p3" >Jewelry Software</p>
-              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
             <div id="" className='col-sm-3 px-2'>
               <div className=' ' id="card1">
-              <img src="4.svg" alt="" />
-              <p id="p3" >01</p> 
-              <p id="p3" >Jewelry Software</p>
-              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
             <div id="" className='col-sm-3 px-2'>
               <div className=' ' id="card1">
-              <img src="4.svg" alt="" />
-              <p id="p3" >01</p> 
-              <p id="p3" >Jewelry Software</p>
-              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
           </div>
           <button >View More</button>
-        </section> 
+        </section>
         <section id="sec3" style={{ backgroundImage: "linear-gradient(to left,white,white,rgba(255, 160, 122, 0.151))", display: "flex", flexDirection: "row !important" }}   >
           <div className='container' >
             <div className='row col-sm-12'>
@@ -126,51 +126,46 @@ function App() {
               <div className='col-sm-7' >
                 <MDBCard>
                   <MDBCardBody className='px-4'>
-                  <form action="https://formspree.io/f/mbjnoddw" method='post'>
-                    <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
-                    <MDBRow>
-                      <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' name='name' />
-                      </MDBCol>
-                      <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Last Name' size='lg' id='form2' type='text' name='last name' />
-                      </MDBCol>
-                    </MDBRow>
+                    <form action="https://formspree.io/f/mbjnoddw" method='post'>
+                      <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
+                      <MDBRow>
+                        <MDBCol md='6'>
+                          <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' name='name' />
+                        </MDBCol>
+                        <MDBCol md='6'>
+                          <MDBInput wrapperClass='mb-4' label='phone number' size='lg' id='form2' type='text' name='phone number' />
+                        </MDBCol>
+                      </MDBRow>
 
-                    <MDBRow>
+                      <MDBRow>
 
-                      <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='address' size='lg' id='form3' type='text' name='address' />
-                      </MDBCol>
-
-                      <MDBCol md='6' className='mb-4'>
-                        <h6 className="fw-bold">Gender: </h6>
-                        <MDBRadio name='inlineRadio' id='inlineRadio1' value='option1' label='Female' inline />
-                        <MDBRadio name='inlineRadio' id='inlineRadio2' value='option2' label='Male' inline />
-                        <MDBRadio name='inlineRadio' id='inlineRadio3' value='option3' label='Other' inline />
-                      </MDBCol>
-
-                    </MDBRow>
-
-                    <MDBRow>
-
-                      <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Email' size='lg' id='form4' type='email' name='Email' />
-                      </MDBCol>
-                      <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Phone Number' size='lg' id='form5' type='rel' name='Phone Number' />
-                      </MDBCol>
-                    </MDBRow>
-                    <button className='mb-4' size='lg'>Submit</button>
-                 </form>
+                        <MDBCol md='12'>
+                          <MDBInput wrapperClass='mb-4' label='address' size='lg' id='form3' type='text' name='address' />
+                        </MDBCol>
+                      </MDBRow>
+                      <MDBRow>
+                        <MDBCol md='12'>
+                          {/* <MDBInput wrapperClass='mb-4' label='Phone Number' size='lg' id='form5' type='rel' /> */}
+                          <label>message</label>
+                          <textarea class="form-control"   name="message" id="" cols="87" rows="5"></textarea>
+                        </MDBCol>
+                      </MDBRow>
+                      <button className='mb-4' size='lg'>Submit</button>
+                    </form>
                   </MDBCardBody>
                 </MDBCard>
               </div>
+
+
             </MDBRow>
           </MDBContainer>
+
         </section>
+
       </main>
       <footer>
+
+
         <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
             <div className='me-5 d-none d-lg-block'>
