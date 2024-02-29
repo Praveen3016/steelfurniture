@@ -116,16 +116,16 @@ function App() {
         <section style={{ display: "flex", justifyContent: "center", alignItems: "center", }} id="sec4" >
           <p style={{ color: "red" }} className="p1 mb-4  fw-bold " >Contact Us</p>
           <MDBContainer fluid >
-            <MDBRow className='justify-content-center align-items-center m-5 '>
+            <MDBRow className='justify-content-center align-items-center '>
               <div className='col-sm-5' >
                 <h3>Contact with use throw</h3>
                 <p><span>Mobile No.  </span>:  +919351990014</p>
                 <p><span>Email Id </span>: tilakkumar@gmail.com</p>
                 <p><span>Address : </span> sirohi rampura near by high secondary school main road rampura .</p>
               </div>
-              <div  className='col-sm-7' >
+              <div  className='col-xl-7 col-sm-8 col-md-11  ' >
                 <MDBCard >
-                  <MDBCardBody  className='px-4'>
+                  <MDBCardBody  >
                     <form action="https://formspree.io/f/mbjnoddw" method='post'>
                       <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
                       <MDBRow>
