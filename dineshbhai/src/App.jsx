@@ -8,14 +8,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FaWhatsapp } from "react-icons/fa";
 
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBTextArea,
 }
   from 'mdb-react-ui-kit';
 import './App.css'
@@ -51,7 +49,7 @@ function App() {
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className='d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  '>
 
-              <h1 className='text-white heading mb-4 fw-bold'>Kheteshvar steel factory .</h1>
+              <h1 className='text-white heading mb-4 fw-bold'>Kheteshwar steel factory .</h1>
               <p className='text-white    ' >Self-service is now becoming an expectation in the B2B metal manufacturing industry. Make buying from your business easy with built-in CPQ, plus a 2D or 3D visualizer and guided selling..</p>
               <button className=''>All Products</button>
             </div>
@@ -109,7 +107,7 @@ function App() {
               </div>
               <div className="col-sm-6 d-flex align-items-center ">
                 <div>
-                  <h2>Welcome to KFS Steel Furniture</h2>
+                  <h2>Welcome to KSF Steel Factory</h2>
                   <p id="sec3p3">We seamlessly merge three key components – Website, Mobile Application, and Software technology. This is the main factor that sets us apart from our competition and allows us to deliver a specialist in our services.</p>
                   <div>
                     <button >View More</button>
@@ -124,12 +122,13 @@ function App() {
           <MDBContainer fluid >
             <MDBRow className='justify-content-center align-items-center '>
               <div className='col-sm-5' >
-                <h3>Contact with use throw</h3>
-                <p><span>Mobile No.  </span>:  +919351990014</p>
-                <p><span>Email Id </span>: tilakkumar@gmail.com</p>
-                <p><span>Address : </span> sirohi rampura near by high secondary school main road rampura .</p>
+                <h3>Contact us through</h3>
+                <p><span><b>Mobile No. </b> </span>:  +919351990014</p>
+                <p><span><b>Email Id </b></span>: tilakkumar@gmail.com</p>
+                <p><span><b>Address : </b></span> sirohi rampura near by high secondary school 
+                main <span id='spn' >road rampura .</span></p>
               </div>
-              <div  className='col-xl-6 col-sm-8 col-md-11  ' >
+              <div  className='col-xl-7 col-sm-8 col-md-11  ' >
                 <MDBCard >
                   <MDBCardBody  >
                     <form action="https://formspree.io/f/mbjnoddw" method='post'>
@@ -156,6 +155,7 @@ function App() {
                       </MDBRow>
                       <button className='mt-4' size='lg'>Submit</button>
                     </form>
+>>>>>>> 07fa26329c7e12234f591488de24886f46cbc6bb */}
                   </MDBCardBody>
                 </MDBCard>
               </div>
@@ -171,7 +171,7 @@ function App() {
         <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
             <div className='me-5 d-none d-lg-block'>
-              <span>Get connected with us on social networks:</span>
+              <span>Get connected with us on Social Media :</span>
             </div>
 
             <div>
