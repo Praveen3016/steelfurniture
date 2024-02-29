@@ -5,7 +5,8 @@ import { MDBFooter, MDBIcon } from 'mdb-react-ui-kit';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FaWhatsapp } from "react-icons/fa";
+
 import {
   MDBBtn,
   MDBContainer,
@@ -26,8 +27,8 @@ function App() {
         <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
           <Container>
             <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" className='' alt="" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/> 
+                        <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
                 <div className='d-flex gap-5 m-auto '>
                   <Nav.Link className='listt' href="#home">Home</Nav.Link>
@@ -44,6 +45,8 @@ function App() {
         </Navbar>
       </header>
       <main>
+      <FaWhatsapp />
+
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className='d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  '>
@@ -53,41 +56,44 @@ function App() {
               <button className=''>All Products</button>
             </div>
           </div>
+         
         </section>
         <section id="sec2">
           <p id="p1">_WHAT WE OFFER_</p>
           <h2>Services We Offer</h2>
           <p id="p2">We are specialists in information technologies and we apply our full range of talent to creating the perfect solution for each client's needs.</p>
           <div className="cards container row   ">
-            <div id="" className='col-sm-3 px-2'>
-              <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
+            <div id="" className='col-sm-3  px-2'>
+              <div  id="card1">
+             
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='w-100 img-fluid ' src="https://th.bing.com/th/id/OIP.DpxZPUDsx0SSji0I-0CqugHaEK?rs=1&pid=ImgDetMain" alt=""/>
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
             <div id="" className='col-sm-3 px-2'>
               <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='w-100 img-fluid ' src="https://th.bing.com/th/id/R.50de7787b0db8aac2ab29988f0beebe2?rik=qaZI0DuM2dWSTg&riu=http%3a%2f%2fadonaisteel.com.au%2fwp-content%2fgallery%2fadonai-steel-security-doors-gallery%2fAdonai-Steel-Security-Doors-2.jpg&ehk=6XIoOdrRLh5U2GLZIRucORaTr%2bfTTbNPA2krWuyWytg%3d&risl=&pid=ImgRaw&r=0" alt="" />
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
-            <div id="" className='col-sm-3 px-2'>
+            <div id="" className='col-sm-3 px-2 h-50'>
               <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
+              
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='w-100 img-fluid ' src="https://www.recruiter.co.uk/sites/default/files/media/image/2017/steel_worker_shutterstock_126241472.jpg" alt="" />
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
-            <div id="" className='col-sm-3 px-2'>
+            <div id="" className='col-sm-3 h-50 px-2'>
               <div className=' ' id="card1">
-                <img src="4.svg" alt="" />
                 <p id="p3" >01</p>
                 <p id="p3" >Jewelry Software</p>
+                <img className='img-fluid w-100 ' src="https://th.bing.com/th/id/OIP.1N_ALN2h2sz60WzgpYg95wHaE7?rs=1&pid=ImgDetMain" alt="" />
                 <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
               </div>
             </div>
@@ -123,7 +129,7 @@ function App() {
                 <p><span>Email Id </span>: tilakkumar@gmail.com</p>
                 <p><span>Address : </span> sirohi rampura near by high secondary school main road rampura .</p>
               </div>
-              <div  className='col-xl-7 col-sm-8 col-md-11  ' >
+              <div  className='col-xl-6 col-sm-8 col-md-11  ' >
                 <MDBCard >
                   <MDBCardBody  >
                     <form action="https://formspree.io/f/mbjnoddw" method='post'>
