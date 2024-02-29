@@ -14,7 +14,7 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBRadio
+  MDBTextArea,
 }
   from 'mdb-react-ui-kit';
 import './App.css'
@@ -123,9 +123,9 @@ function App() {
                 <p><span>Email Id </span>: tilakkumar@gmail.com</p>
                 <p><span>Address : </span> sirohi rampura near by high secondary school main road rampura .</p>
               </div>
-              <div className='col-sm-7' >
-                <MDBCard>
-                  <MDBCardBody className='px-4'>
+              <div  className='col-sm-7' >
+                <MDBCard >
+                  <MDBCardBody  className='px-4'>
                     <form action="https://formspree.io/f/mbjnoddw" method='post'>
                       <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
                       <MDBRow>
@@ -145,18 +145,14 @@ function App() {
                       </MDBRow>
                       <MDBRow>
                         <MDBCol md='12'>
-                          {/* <MDBInput wrapperClass='mb-4' label='Phone Number' size='lg' id='form5' type='rel' /> */}
-                          <label>message</label>
-                          <textarea class="form-control"   name="message" id="" cols="87" rows="5"></textarea>
+                        <MDBTextArea label='message'id='validationTextarea'placeholder='Required example textarea'required/>
                         </MDBCol>
                       </MDBRow>
-                      <button className='mb-4' size='lg'>Submit</button>
+                      <button className='mt-4' size='lg'>Submit</button>
                     </form>
                   </MDBCardBody>
                 </MDBCard>
               </div>
-
-
             </MDBRow>
           </MDBContainer>
 
