@@ -25,7 +25,7 @@ function App() {
       <header>
         <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100  ">
           <Container>
-            <Navbar.Brand href="#home"><img className='w-25' src="public\image\Screenshot (133).png" alt="" /></Navbar.Brand>
+            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
@@ -46,7 +46,7 @@ function App() {
       <main>
          <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
-            <div className='d-flex flex-column w-50 ps-5  '>
+            <div className='d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  '>
 
               <h1 className='text-white heading mb-4 fw-bold'>Kheteshvar steel factory .</h1>
               <p className='text-white    ' >Self-service is now becoming an expectation in the B2B metal manufacturing industry. Make buying from your business easy with built-in CPQ, plus a 2D or 3D visualizer and guided selling..</p>
