@@ -14,7 +14,7 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBRadio
+  MDBTextArea,
 }
   from 'mdb-react-ui-kit';
 import './App.css'
@@ -23,9 +23,9 @@ function App() {
   return (
     <>
       <header>
-        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100  ">
+        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
           <Container>
-            <Navbar.Brand href="#home"><img className='w-25' src="public\image\Screenshot (133).png" alt="" /></Navbar.Brand>
+            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" className='' alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
@@ -44,9 +44,9 @@ function App() {
         </Navbar>
       </header>
       <main>
-         <section id="sec1">
+        <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
-            <div className='d-flex flex-column w-50 ps-5  '>
+            <div className='d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  '>
 
               <h1 className='text-white heading mb-4 fw-bold'>Kheteshwar steel factory .</h1>
               <p className='text-white    ' >Self-service is now becoming an expectation in the B2B metal manufacturing industry. Make buying from your business easy with built-in CPQ, plus a 2D or 3D visualizer and guided selling..</p>
@@ -58,34 +58,42 @@ function App() {
           <p id="p1">_WHAT WE OFFER_</p>
           <h2>Services We Offer</h2>
           <p id="p2">We are specialists in information technologies and we apply our full range of talent to creating the perfect solution for each client's needs.</p>
-          <div className="cards">
-            <div id="card1">
-              <img src="4.svg" alt="" />
-              <p id="p3" >01</p>
-              <p id="p3" >Jewelry Software</p>
-              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+          <div className="cards container row   ">
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
-            <div id="card1">
-              <img src="3.svg" alt="" />
-              <p id="p3" >02</p>
-              <p id="p3" >Restaurant Software</p>
-              <p id="p4">Super POS/Smart Restaurant restaurant management software.</p>
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
-            <div id="card1">
-              <img src="2.svg" alt="" />
-              <p id="p3" >03</p>
-              <p id="p3" >Web Application</p>
-              <p id="p4">We make your Customized Web App a valuable business asset.</p>
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
-            <div id="card1">
-              <img src="Mobile-apps-icon.svg" alt="" />
-              <p id="p3" >04</p>
-              <p id="p3" >Mobile Apps</p>
-              <p id="p4">We provide customized Mobile app development services.</p>
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+                <img src="4.svg" alt="" />
+                <p id="p3" >01</p>
+                <p id="p3" >Jewelry Software</p>
+                <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
           </div>
           <button >View More</button>
-        </section> 
+        </section>
         <section id="sec3" style={{ backgroundImage: "linear-gradient(to left,white,white,rgba(255, 160, 122, 0.151))", display: "flex", flexDirection: "row !important" }}   >
           <div className='container' >
             <div className='row col-sm-12'>
@@ -108,7 +116,7 @@ function App() {
         <section style={{ display: "flex", justifyContent: "center", alignItems: "center", }} id="sec4" >
           <p style={{ color: "red" }} className="p1 mb-4  fw-bold " >Contact Us</p>
           <MDBContainer fluid >
-            <MDBRow className='justify-content-center align-items-center m-5 '>
+            <MDBRow className='justify-content-center align-items-center '>
               <div className='col-sm-5' >
                 <h3>Contact us through</h3>
                 <p><span><b>Mobile No. </b> </span>:  +919351990014</p>
@@ -116,6 +124,7 @@ function App() {
                 <p><span><b>Address : </b></span> sirohi rampura near by high secondary school 
                 main <span id='spn' >road rampura .</span></p>
               </div>
+<<<<<<< HEAD
               <div className='col-sm-7' >
                 <MDBCard>
                   <MDBCardBody className='px-4'>
@@ -148,6 +157,35 @@ function App() {
                       </MDBCol>
                     </MDBRow>
                     <button className='mb-4' size='lg'>Submit</button>
+=======
+              <div  className='col-xl-7 col-sm-8 col-md-11  ' >
+                <MDBCard >
+                  <MDBCardBody  >
+                    <form action="https://formspree.io/f/mbjnoddw" method='post'>
+                      <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
+                      <MDBRow>
+                        <MDBCol md='6'>
+                          <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' name='name' />
+                        </MDBCol>
+                        <MDBCol md='6'>
+                          <MDBInput wrapperClass='mb-4' label='phone number' size='lg' id='form2' type='text' name='phone number' />
+                        </MDBCol>
+                      </MDBRow>
+
+                      <MDBRow>
+
+                        <MDBCol md='12'>
+                          <MDBInput wrapperClass='mb-4' label='address' size='lg' id='form3' type='text' name='address' />
+                        </MDBCol>
+                      </MDBRow>
+                      <MDBRow>
+                        <MDBCol md='12'>
+                        <MDBTextArea label='message'id='validationTextarea'placeholder='Required example textarea'required/>
+                        </MDBCol>
+                      </MDBRow>
+                      <button className='mt-4' size='lg'>Submit</button>
+                    </form>
+>>>>>>> 07fa26329c7e12234f591488de24886f46cbc6bb
                   </MDBCardBody>
                 </MDBCard>
               </div>
