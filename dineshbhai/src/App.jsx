@@ -58,30 +58,38 @@ function App() {
           <p id="p1">_WHAT WE OFFER_</p>
           <h2>Services We Offer</h2>
           <p id="p2">We are specialists in information technologies and we apply our full range of talent to creating the perfect solution for each client's needs.</p>
-          <div className="cards">
-            <div id="card1">
+          <div className="cards container row   ">
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
               <img src="4.svg" alt="" />
-              <p id="p3" >01</p>
+              <p id="p3" >01</p> 
               <p id="p3" >Jewelry Software</p>
               <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
-            <div id="card1">
-              <img src="3.svg" alt="" />
-              <p id="p3" >02</p>
-              <p id="p3" >Restaurant Software</p>
-              <p id="p4">Super POS/Smart Restaurant restaurant management software.</p>
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+              <img src="4.svg" alt="" />
+              <p id="p3" >01</p> 
+              <p id="p3" >Jewelry Software</p>
+              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
-            <div id="card1">
-              <img src="2.svg" alt="" />
-              <p id="p3" >03</p>
-              <p id="p3" >Web Application</p>
-              <p id="p4">We make your Customized Web App a valuable business asset.</p>
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+              <img src="4.svg" alt="" />
+              <p id="p3" >01</p> 
+              <p id="p3" >Jewelry Software</p>
+              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
-            <div id="card1">
-              <img src="Mobile-apps-icon.svg" alt="" />
-              <p id="p3" >04</p>
-              <p id="p3" >Mobile Apps</p>
-              <p id="p4">We provide customized Mobile app development services.</p>
+            <div id="" className='col-sm-3 px-2'>
+              <div className=' ' id="card1">
+              <img src="4.svg" alt="" />
+              <p id="p3" >01</p> 
+              <p id="p3" >Jewelry Software</p>
+              <p id="p4">A diamond jewellery software to Manage Jewelry Business.</p>
+              </div>
             </div>
           </div>
           <button >View More</button>
