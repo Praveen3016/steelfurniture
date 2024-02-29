@@ -126,20 +126,21 @@ function App() {
               <div className='col-sm-7' >
                 <MDBCard>
                   <MDBCardBody className='px-4'>
+                  <form action="https://formspree.io/f/mbjnoddw" method='post'>
                     <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' />
+                        <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' name='name' />
                       </MDBCol>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Last Name' size='lg' id='form2' type='text' />
+                        <MDBInput wrapperClass='mb-4' label='Last Name' size='lg' id='form2' type='text' name='last name' />
                       </MDBCol>
                     </MDBRow>
 
                     <MDBRow>
 
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Birthday' size='lg' id='form3' type='text' />
+                        <MDBInput wrapperClass='mb-4' label='address' size='lg' id='form3' type='text' name='address' />
                       </MDBCol>
 
                       <MDBCol md='6' className='mb-4'>
@@ -154,30 +155,22 @@ function App() {
                     <MDBRow>
 
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Email' size='lg' id='form4' type='email' />
+                        <MDBInput wrapperClass='mb-4' label='Email' size='lg' id='form4' type='email' name='Email' />
                       </MDBCol>
-
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4' label='Phone Number' size='lg' id='form5' type='rel' />
+                        <MDBInput wrapperClass='mb-4' label='Phone Number' size='lg' id='form5' type='rel' name='Phone Number' />
                       </MDBCol>
-
                     </MDBRow>
                     <button className='mb-4' size='lg'>Submit</button>
-
+                 </form>
                   </MDBCardBody>
                 </MDBCard>
               </div>
-
-
             </MDBRow>
           </MDBContainer>
-
         </section>
-
       </main>
       <footer>
-
-
         <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
             <div className='me-5 d-none d-lg-block'>
