@@ -2,14 +2,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from 'react';
 import { MDBFooter, MDBIcon } from 'mdb-react-ui-kit';
-<<<<<<< HEAD
-=======
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { FaWhatsapp } from "react-icons/fa";
-
->>>>>>> 68bc9fcd8359f53ed994c294c87938a9a302f608
 import {
   MDBContainer,
   MDBRow,
@@ -17,6 +10,7 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
+  MDBTextArea 
 }
   from 'mdb-react-ui-kit';
 import './App.css'
@@ -24,31 +18,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-<<<<<<< HEAD
-      
-=======
-      <header>
-        <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z " style={{zIndex : "9999"}}>
-          <Container>
-            <Navbar.Brand href="#home"><img  width={60} height={45} src="public\image\logo.png" className='' alt="" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/> 
-                        <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
-                <div className='d-flex gap-5 m-auto '>
-                  <Nav.Link className='listt' href="#home">Home</Nav.Link>
-                  <Nav.Link className='listt' href="#link">About</Nav.Link>
-                  <Nav.Link className='listt' href="#link">product</Nav.Link>
-                  <Nav.Link className='listt' href="#link">Service</Nav.Link>
-                </div>
-                <div className='contact'>
-                  <button>Contact us</button>
-                </div>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </header>
->>>>>>> 68bc9fcd8359f53ed994c294c87938a9a302f608
       <main>
       <FaWhatsapp />
 
@@ -162,7 +131,7 @@ function App() {
                       </MDBRow>
                       <button className='mt-4' size='lg'>Submit</button>
                     </form>
->>>>>>> 07fa26329c7e12234f591488de24886f46cbc6bb */}
+
                   </MDBCardBody>
                 </MDBCard>
               </div>
