@@ -230,7 +230,7 @@ function App() {
                         <MDBCol md="6">
                           <MDBInput
                             wrapperClass="mb-4"
-                            label="First Name"
+                            label="Full Name"
                             size="lg"
                             id="form1"
                             type="text"
