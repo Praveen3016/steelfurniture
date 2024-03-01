@@ -2,8 +2,8 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
 import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
-import whatsapp from "../public/image/whatsapp.png";
-import call from '../public/image/call.png'
+import Whatsapp from './component/Whatsapp'
+import Call from './component/Calllogo'
 import {
   MDBContainer,
   MDBRow,
@@ -33,38 +33,8 @@ function App() {
                     <li></li>
             </ul>
     </div >
-      <div className="image-container">
-        <a href="https://wa.me/+919967745712">
-          <img
-            src={whatsapp}
-            alt=""
-            style={{
-              width: "50px",
-              position: "fixed",
-              bottom: "20px",
-              right: "15px",
-              zIndex: "100",
-            }}
-            className="scaling-image"
-          />
-        </a>
-      </div>
-      <div className="image-container">
-        <a href="tel:+9967745712">
-          <img
-            src={call}
-            alt=""
-            style={{
-              width: "50px",
-              position: "fixed",
-              bottom: "20px",
-              left: "15px",
-              zIndex: "100",
-            }}
-            className="scaling-image"
-          />
-        </a>
-      </div>
+      <Whatsapp/>
+      <Call/>
       <main>
   
 
