@@ -5,7 +5,6 @@ import { FaAddressBook } from "react-icons/fa";
 
 
 import {
-  MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,
@@ -14,7 +13,7 @@ import {
   MDBTextArea 
 }
   from 'mdb-react-ui-kit';
-function Contect() {
+function Contact() {
   return (
     <div className='container-fluid '>
       <div className='row col-sm-12 align-items-center  justify-content-center  '>
@@ -83,4 +82,4 @@ function Contect() {
   )
 }
 
-export default Contect
+export default Contact

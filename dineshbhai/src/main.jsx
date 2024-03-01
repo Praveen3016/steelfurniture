@@ -5,7 +5,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import Products from './component/Products.jsx'
 import Layout from './Layout.jsx';
-import Contect from './component/Contect.jsx';
+import Contect from './component/Contact.jsx';
 import About from './component/About.jsx';
 
 const router = createBrowserRouter(
