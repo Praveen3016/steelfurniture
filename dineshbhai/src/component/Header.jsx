@@ -34,7 +34,7 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
               <div className='d-flex gap-5 m-auto '>
-                <Nav.Link ><Link to="/" className='listt text-black' >Home</Link></Nav.Link>
+                <Nav.Link ><Link to="/" className='listt text-black'  >Home</Link></Nav.Link>
                 <Nav.Link ><Link to="/product" className='listt text-black' >Product</Link></Nav.Link>
                 <Nav.Link ><Link to="/about" className='listt text-black' >About</Link></Nav.Link>
               </div>
