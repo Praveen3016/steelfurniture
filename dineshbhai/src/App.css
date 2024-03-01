@@ -211,6 +211,12 @@
 #sec4 .col-sm-5 #spn{
   margin-left: 4.5rem;
 }
+.foot-logo h6{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
 
 .image-container {
   overflow: hidden; /* Ensure the image does not overflow its container */
