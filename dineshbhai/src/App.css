@@ -212,3 +212,22 @@
   margin-left: 4.5rem;
 }
 
+.image-container {
+  overflow: hidden; /* Ensure the image does not overflow its container */
+}
+
+.scaling-image {
+  animation: scaleAnimation 3s infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    transform: scale(1.2); /* Scale up */
+  }
+  100% {
+    transform: scale(1); /* Scale back to original */
+}
+}
