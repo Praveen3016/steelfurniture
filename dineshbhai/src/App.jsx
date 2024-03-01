@@ -95,7 +95,7 @@ function App() {
         </section>
         <section style={{ display: "flex", justifyContent: "center", alignItems: "center", }} id="sec4" >
           <p style={{ color: "red" }} className="p1 mb-4  fw-bold " >Contact Us</p>
-          <MDBContainer fluid >
+          <MDBContainer>
             <MDBRow className='justify-content-center align-items-center '>
               <div className='col-sm-5' >
                 <h3>Contact us through</h3>
