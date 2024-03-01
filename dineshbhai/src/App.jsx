@@ -114,19 +114,19 @@ function App() {
                           <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text' name='name' />
                         </MDBCol>
                         <MDBCol md='6'>
-                          <MDBInput wrapperClass='mb-4' label='phone number' size='lg' id='form2' type='text' name='phone number' />
+                          <MDBInput wrapperClass='mb-4' label='Phone number' size='lg' id='form2' type='text' name='phone number' />
                         </MDBCol>
                       </MDBRow>
 
                       <MDBRow>
 
                         <MDBCol md='12'>
-                          <MDBInput wrapperClass='mb-4' label='address' size='lg' id='form3' type='text' name='address' />
+                          <MDBInput wrapperClass='mb-4' label='Address' size='lg' id='form3' type='text' name='address' />
                         </MDBCol>
                       </MDBRow>
                       <MDBRow>
                         <MDBCol md='12'>
-                        <MDBTextArea label='message'id='validationTextarea'placeholder='Required example textarea'required/>
+                        <MDBTextArea label='Message'id='validationTextarea' required/>
                         </MDBCol>
                       </MDBRow>
                       <button className='mt-4' size='lg'>Submit</button>
