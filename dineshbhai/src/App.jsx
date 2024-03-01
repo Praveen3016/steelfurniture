@@ -4,6 +4,7 @@ import React from "react";
 import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
 import { FaWhatsapp } from "react-icons/fa";
 import whatsapp from "../public/image/whatsapp.png";
+import call from '../public/image/call.png'
 import {
   MDBContainer,
   MDBRow,
@@ -24,10 +25,26 @@ function App() {
             src={whatsapp}
             alt=""
             style={{
-              width: "60px",
+              width: "50px",
               position: "fixed",
               bottom: "20px",
-              right: "10px",
+              right: "15px",
+              zIndex: "100",
+            }}
+            className="scaling-image"
+          />
+        </a>
+      </div>
+      <div className="image-container">
+        <a href="tel:+9967745712">
+          <img
+            src={call}
+            alt=""
+            style={{
+              width: "50px",
+              position: "fixed",
+              bottom: "20px",
+              left: "15px",
               zIndex: "100",
             }}
             className="scaling-image"
