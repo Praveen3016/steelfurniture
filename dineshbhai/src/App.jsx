@@ -2,6 +2,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
 import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
+import { FaWhatsapp } from "react-icons/fa";
 import whatsapp from "../public/image/whatsapp.png";
 import call from '../public/image/call.png'
 import {
