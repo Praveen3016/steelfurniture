@@ -7,7 +7,8 @@ import Products from './component/Products.jsx'
 import Layout from './Layout.jsx';
 import Contect from './component/Contact.jsx';
 import About from './component/About.jsx';
-
+import Privacypolicy from './component/Privacypolicy.jsx';
+import Catalouge from './component/Catalouge.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
@@ -15,8 +16,8 @@ const router = createBrowserRouter(
       <Route path="product" element={<Products/>} />
       <Route path="contect" element={<Contect/>} />
       <Route path="about" element={<About/>} />
-
-
+      <Route path="catalouge" element={<Catalouge/>} />
+      <Route path="privacypolicy" element={<Privacypolicy/>} />
     </Route>
   )
   )
