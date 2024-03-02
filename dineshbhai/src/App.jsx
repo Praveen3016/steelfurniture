@@ -5,6 +5,7 @@ import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
 import whatsapp from "../public/image/whatsapp.png";
 import call from '../public/image/call.png'
 import ScrollToTopButton from "./component/ScrollToTopButton";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {
   MDBContainer,
   MDBRow,
