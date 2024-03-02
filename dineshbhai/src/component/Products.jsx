@@ -64,7 +64,7 @@ function Products() {
         </MDBCard>
       )}
       <div className='container-fluid'>
-        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2'>
+        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
           <div>
             <h1>hello</h1>
           </div>
