@@ -355,3 +355,7 @@ gap: 1rem;
     }
 
 }
+label:hover
+{
+  background-color: #ff4a17;
+}
