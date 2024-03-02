@@ -388,5 +388,5 @@ gap: 1rem;
 
 .img-hover:hover{
   scale: 1.1;
-  transition: .3s ease-in;
+  transition: .3s ease-in-out;
 }
