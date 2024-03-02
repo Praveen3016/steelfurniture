@@ -1,5 +1,7 @@
 import React from "react";
-
+import ScrollToTopButton from "./ScrollToTopButton";
+import Whatsapp from "./Whatsapp";
+import Calllogo from "./Calllogo";
 const Privacypolicy = () => {
   return (
     <div className="container" style={{position: 'relative', top:'100px'}}>
@@ -552,6 +554,9 @@ const Privacypolicy = () => {
       <ul>
         <li>By phone number: 9967745712</li>
       </ul>
+      <Calllogo/>
+      <Whatsapp/>
+      <ScrollToTopButton/>
     </div>
   );
 };
