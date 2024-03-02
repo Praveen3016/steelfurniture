@@ -6,7 +6,7 @@ function Contextprovider({ children }) {
     {
       id: "1",
       src: 'https://floridapolitics.com/wp-content/uploads/2021/01/steel-worker.jpg', width: 4, height: 3,
-      name: "Jewelry Software"
+      name: "Jery Software"
     },
     {
       id: "2", src: 'https://images.pexels.com/photos/204275/pexels-photo-204275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', width: 4, height: 3, name: "Jewelry Software"
