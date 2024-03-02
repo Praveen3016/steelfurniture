@@ -2,8 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import {Link , NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 function Header() {
@@ -15,14 +14,17 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto  d-flex align-items-center  justify-content-between w-100 ">
-            <div className='d-flex gap-5 m-auto '>
+            <div className='d-flex gap-4 m-auto '>
               <Nav.Link ><Link to="/" className='listt text-black' >Home</Link></Nav.Link>
               <Nav.Link ><Link to="/product" className='listt text-black' >Product</Link></Nav.Link>
               <Nav.Link ><Link to="/about" className='listt text-black' >About</Link></Nav.Link>
+              <Nav.Link ><Link to="/catalouge" className='listt text-black' >Catalouge</Link></Nav.Link>
+              <Nav.Link ><Link to="/privacypolicy" className='listt text-black' >Privacy Policy</Link></Nav.Link>
             </div>
             <div className='contact'>
               <button><Link to='/contect' className="text-black">Contact us</Link></button>
             </div>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

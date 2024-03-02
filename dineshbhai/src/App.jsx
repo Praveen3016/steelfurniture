@@ -3,9 +3,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
 import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
 import whatsapp from "../public/image/whatsapp.png";
-import call from '../public/image/call.png'
+import call from "../public/image/call.png";
 import ScrollToTopButton from "./component/ScrollToTopButton";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import {
   MDBContainer,
   MDBRow,
@@ -18,23 +18,22 @@ import {
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
- 
   return (
     <>
-<div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-    </div >
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div className="image-container">
         <a href="https://wa.me/+919967745712">
           <img
@@ -68,7 +67,7 @@ function App() {
         </a>
       </div>
       <main>
-  <ScrollToTopButton/>
+        <ScrollToTopButton />
 
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
@@ -96,10 +95,13 @@ function App() {
           <div className="cards container row   ">
             <div id="" className="col-sm-3  px-2">
               <div id="card1">
-                <div style={{color:"rgb(255, 111, 0)"}} className=" fw-bold  fs-6 d-flex  align-items-center  justify-content-center  " >
-                <p>Jewelry Software</p>
+                <div
+                  style={{ color: "rgb(255, 111, 0)" }}
+                  className=" fw-bold  fs-6 d-flex  align-items-center  justify-content-center  "
+                >
+                  <p>Jewelry Software</p>
                 </div>
-             
+
                 <img
                   className="w-100 img-fluid "
                   src="https://th.bing.com/th/id/OIP.DpxZPUDsx0SSji0I-0CqugHaEK?rs=1&pid=ImgDetMain"
@@ -112,7 +114,12 @@ function App() {
             </div>
             <div id="" className="col-sm-3 px-2">
               <div className=" " id="card1">
-                <p style={{color:"rgb(255, 111, 0)"}} className="d-flex  fw-bold  fs-6  align-items-center  justify-content-center " >Jewelry Software</p>
+                <p
+                  style={{ color: "rgb(255, 111, 0)" }}
+                  className="d-flex  fw-bold  fs-6  align-items-center  justify-content-center "
+                >
+                  Jewelry Software
+                </p>
                 <img
                   className="w-100 img-fluid "
                   src="https://th.bing.com/th/id/R.50de7787b0db8aac2ab29988f0beebe2?rik=qaZI0DuM2dWSTg&riu=http%3a%2f%2fadonaisteel.com.au%2fwp-content%2fgallery%2fadonai-steel-security-doors-gallery%2fAdonai-Steel-Security-Doors-2.jpg&ehk=6XIoOdrRLh5U2GLZIRucORaTr%2bfTTbNPA2krWuyWytg%3d&risl=&pid=ImgRaw&r=0"
@@ -125,7 +132,12 @@ function App() {
             </div>
             <div id="" className="col-sm-3 px-2 h-50">
               <div className=" " id="card1">
-                <p style={{color:"rgb(255, 111, 0)"}} className="d-flex  align-items-center justify-content-center fw-bold  fs-6 " >Jewelry Software</p>
+                <p
+                  style={{ color: "rgb(255, 111, 0)" }}
+                  className="d-flex  align-items-center justify-content-center fw-bold  fs-6 "
+                >
+                  Jewelry Software
+                </p>
                 <img
                   className="w-100 img-fluid "
                   src="https://www.recruiter.co.uk/sites/default/files/media/image/2017/steel_worker_shutterstock_126241472.jpg"
@@ -138,7 +150,12 @@ function App() {
             </div>
             <div id="" className="col-sm-3 h-50 px-2">
               <div className=" " id="card1">
-                <p style={{color:"rgb(255, 111, 0)"}}  className="d-flex  align-items-center justify-content-center fw-bold  fs-6 "  >Jewelry Software</p>
+                <p
+                  style={{ color: "rgb(255, 111, 0)" }}
+                  className="d-flex  align-items-center justify-content-center fw-bold  fs-6 "
+                >
+                  Jewelry Software
+                </p>
                 <img
                   className="img-fluid w-100 "
                   src="https://th.bing.com/th/id/OIP.1N_ALN2h2sz60WzgpYg95wHaE7?rs=1&pid=ImgDetMain"
@@ -408,10 +425,7 @@ function App() {
             </a>
           </div>
         </MDBFooter>
-       
-
       </footer>
-
     </>
   );
 }
