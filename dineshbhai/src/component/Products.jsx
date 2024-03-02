@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState  , useContext} from 'react'
 import Whatsapp from './Whatsapp'
 import Calllogo from './Calllogo'
+
 import Usercontext from '../context/usecontext';
 import {
   MDBRow,
@@ -13,12 +14,12 @@ import {
   from 'mdb-react-ui-kit';
 function Products() {
   // const [data, setdata]=React.useState(false)
-  const  {photos}  = React.useContext(Usercontext);
+  const  {photos}  = useContext(Usercontext);
   console.log(photos)
-  const myfuntion=()=>
-  {
-    setdata(data = !data);
-  }
+  // const myfuntion=()=>
+  // {
+  //   setdata(data = !data);
+  // }
   
   return (
     <div  className=" " >
@@ -67,7 +68,7 @@ function Products() {
                 <img style={{ cursor: "pointer" }} className='img-fluid imga' src={e.src} alt="" />
                 <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3   " >{e.name}</label>
               </div>
-              <button className={data ? 'bg-salmon' : '' } onClick={myfuntion()}>Order</button>
+              {/* <button className={data ? 'bg-salmon' : '' } onClick={myfuntion()}>Order</button> */}
             </div>
           )}
         </div>

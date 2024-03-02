@@ -25,7 +25,7 @@ function Contextprovider({ children }) {
     { id: "13", src: 'https://imgres.tailbase.com/rzdimg/prods/800/682200_1.jpg', width: 4, height: 3, name: "Jewelry Software" },
   ];
   return (
-    <Usercontext.Provider value={{ user, setuser ,photos }}>
+    <Usercontext.Provider value={({ user, setuser ,photos })}>
       {children}
     </Usercontext.Provider>
   )
