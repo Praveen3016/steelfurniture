@@ -1,6 +1,8 @@
-import React, { useState, useContext } from 'react';
-import Whatsapp from './Whatsapp';
-import Calllogo from './Calllogo';
+
+import React, { useState  , useContext} from 'react'
+import Whatsapp from './Whatsapp'
+import Calllogo from './Calllogo'
+import ScrollToTopButton from './ScrollToTopButton'
 import Usercontext from '../context/usecontext';
 import {
   MDBRow,
@@ -78,6 +80,7 @@ function Products() {
       </div>
       <Whatsapp />
       <Calllogo />
+      <ScrollToTopButton/>
     </div>
   )
 }
