@@ -6,6 +6,8 @@ import whatsapp from "../public/image/whatsapp.png";
 import call from "../public/image/call.png";
 import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Usercontext from "./context/usecontext";
+import { useContext } from "react";
 import {
   MDBContainer,
   MDBRow,
@@ -18,6 +20,9 @@ import {
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
+  const { photos } = useContext(Usercontext);
+  const firstFivePhotos = photos.slice(0, 5);
+
   return (
     <>
       <div class="area">
