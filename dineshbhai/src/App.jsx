@@ -335,7 +335,6 @@ function App() {
               </a>
             </div>
           </section>
-
           <section className="">
             <MDBContainer className="text-center text-md-start mt-5">
               <MDBRow className="mt-3">
