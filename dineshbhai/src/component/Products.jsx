@@ -63,7 +63,7 @@ function Products() {
         </MDBCard>
       )}
       <div className='container-fluid'>
-        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center '>
+        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2'>
           <div>
             <h1>hello</h1>
           </div>
@@ -75,7 +75,7 @@ function Products() {
                 </div>
                 <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
               </div>
-              <button onClick={() => handleOrder(photo.name)} className='mb-3 w-50 mx-auto'>Inquiry Now</button>
+              <button onClick={() => handleOrder(photo.name)} className='my-2 w-50 mx-auto'>Inquiry Now</button>
             </div>
           )}
         </div>
