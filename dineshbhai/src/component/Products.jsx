@@ -1,4 +1,4 @@
-
+import '../App.css'
 import React, { useState  , useContext} from 'react'
 import Whatsapp from './Whatsapp'
 import Calllogo from './Calllogo'
@@ -68,12 +68,14 @@ function Products() {
             <h1>hello</h1>
           </div>
           {photos.map(photo =>
-            <div style={{ marginTop: "10px" }} className='card col-sm-3 ' key={photo.id}>
-              <div className="position-relative hov" >
-                <img style={{ cursor: "pointer" }} className='img-fluid imga' src={photo.src} alt="" />
-                <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3 " >{photo.name}</label>
+            <div style={{ marginTop: "10px" }} className='card col-sm-3 p-0' key={photo.id}>
+              <div className="position-relative" >
+                <div className="image-container">
+                <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
+                </div>
+                <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
               </div>
-              <button onClick={() => handleOrder(photo.name)}>Order</button>
+              <button onClick={() => handleOrder(photo.name)} className='mb-3 w-50 mx-auto'>Inquiry Now</button>
             </div>
           )}
         </div>
