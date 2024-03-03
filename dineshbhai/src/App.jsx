@@ -21,7 +21,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const { photos } = useContext(Usercontext);
-  const firstFivePhotos = photos.slice(0, 5);
+  const firstFivePhotos = photos.slice(0, 3);
 
   return (
     <>
@@ -174,6 +174,7 @@ function App() {
           </div>
           <button>View More</button>
         </section>
+      
         <section
           id="sec3"
           style={{
@@ -205,6 +206,23 @@ function App() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+        <div className='container-fluid'>
+        <div className='row col-sm-12 gap-2 d-flex align-items-center justify-content-center px-2 mb-4'>
+          {firstFivePhotos.map(photo =>
+            <div style={{ marginTop: "10px" }} className='card col-sm-3 p-0' key={photo.id}>
+              <div className="position-relative" >
+                <div className="image-container">
+                <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
+                </div>
+                <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
+              </div>
+              <button onClick={() => handleOrder(photo.name)} className='my-2 mx-auto' style={{width: '95%'}}>Inquiry Now</button>
+            </div>
+          )}
+        </div>
+      </div>
         </section>
         <section
           style={{
@@ -290,6 +308,7 @@ function App() {
                             label="Message"
                             id="validationTextarea"
                             required
+                            name="message"
                           />
                         </MDBCol>
                       </MDBRow>
