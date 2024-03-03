@@ -1,14 +1,14 @@
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
-import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
 import whatsapp from "../public/image/whatsapp.png";
 import call from "../public/image/call.png";
 import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
 import { useContext } from "react";
-import Footer from "./component/Footer";
+import { useState } from "react";
+import stateDistrictsMap from '../data.json'
 import {
   MDBContainer,
   MDBRow,
@@ -23,6 +23,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const { photos } = useContext(Usercontext);
   const firstFivePhotos = photos.slice(0, 5);
+
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedDistrict, setSelectedDistrict] = useState("");
+  const [districts, setDistricts] = useState([]);
+
+  const handleStateChange = (e) => {
+    const state = e.target.value;
+    setSelectedState(state);
+    setSelectedDistrict("");
+    const selectedStateData = stateDistrictsMap.states.find(
+      (item) => item.state === state
+    );
+    setDistricts(selectedStateData ? selectedStateData.districts : []);
+  };
+
+  const handleDistrictChange = (e) => {
+    setSelectedDistrict(e.target.value);
+  };
 
   return (
     <>
@@ -316,7 +334,39 @@ function App() {
                           />
                         </MDBCol>
                       </MDBRow>
-
+                      <MDBRow className="mb-3">
+                        <MDBCol md={6}>
+                          {/* <label>Select a State:</label> */}
+                          <select className="form-select"
+                            value={selectedState}
+                            onChange={handleStateChange}
+                          >
+                            <option value="" disabled hidden>Select a State</option>
+                            <option value="">-- Select --</option>
+                            {stateDistrictsMap.states.map(
+                              (stateData, index) => (
+                                <option key={index} value={stateData.state}>
+                                  {stateData.state}
+                                </option>
+                              )
+                            )}
+                          </select>
+                        </MDBCol>
+                        <MDBCol md={6}>
+                          <select className="form-select"
+                            value={selectedDistrict}
+                            onChange={handleDistrictChange}
+                          >
+                            <option value="" disabled hidden>Select a District</option>
+                            <option value="">-- Select --</option>
+                            {districts.map((district, index) => (
+                              <option key={index} value={district}>
+                                {district}
+                              </option>
+                            ))}
+                          </select>
+                        </MDBCol>
+                      </MDBRow>
                       <MDBRow>
                         <MDBCol md="12">
                           <MDBInput
