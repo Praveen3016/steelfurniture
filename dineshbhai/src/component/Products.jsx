@@ -76,7 +76,7 @@ function Products() {
                 </div>
                 <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
               </div>
-              <button onClick={() => handleOrder(photo.name)} className='my-2 w-50 mx-auto'>Inquiry Now</button>
+              <button onClick={() => handleOrder(photo.name)} className='my-2 mx-auto' style={{width: '95%'}}>Inquiry Now</button>
             </div>
           )}
         </div>
