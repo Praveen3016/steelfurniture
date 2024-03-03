@@ -311,7 +311,7 @@ function App() {
                       <MDBRow className="mb-3">
                         <MDBCol md={6}>
                           {/* <label>Select a State:</label> */}
-                          <select className="form-control"
+                          <select className="form-select"
                             value={selectedState}
                             onChange={handleStateChange}
                           >
@@ -327,7 +327,7 @@ function App() {
                           </select>
                         </MDBCol>
                         <MDBCol md={6}>
-                          <select className="form-control"
+                          <select className="form-select"
                             value={selectedDistrict}
                             onChange={handleDistrictChange}
                           >
