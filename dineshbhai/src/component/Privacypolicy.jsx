@@ -4,7 +4,7 @@ import Whatsapp from "./Whatsapp";
 import Calllogo from "./Calllogo";
 const Privacypolicy = () => {
   return (
-    <div className="container" style={{position: 'relative', top:'100px'}}>
+    <div className="container" style={{position: 'relative', top:'100px',marginBottom: '150px'}}>
       <h1 className="fs-1">Privacy Policy</h1>
       <p>Last updated: March 02, 2024</p>
       <p>
