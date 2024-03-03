@@ -356,6 +356,7 @@ gap: 1rem;
 
 }
 
+
 .scroll-to-top {
   position: fixed;
   bottom: 90px;
@@ -383,4 +384,9 @@ gap: 1rem;
 
 .scroll-to-top:hover {
   background-color: #0056b3;
+}
+
+.img-hover:hover{
+  scale: 1.1;
+  transition: .3s ease-in-out;
 }

@@ -6,6 +6,9 @@ import whatsapp from "../public/image/whatsapp.png";
 import call from "../public/image/call.png";
 import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Usercontext from "./context/usecontext";
+import { useContext } from "react";
+import Footer from "./component/Footer";
 import {
   MDBContainer,
   MDBRow,
@@ -18,6 +21,9 @@ import {
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
+  const { photos } = useContext(Usercontext);
+  const firstFivePhotos = photos.slice(0, 5);
+
   return (
     <>
       <div class="area">
@@ -169,6 +175,7 @@ function App() {
           </div>
           <button>View More</button>
         </section>
+      
         <section
           id="sec3"
           style={{
@@ -200,6 +207,23 @@ function App() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+        <div className='container-fluid'>
+        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
+          {firstFivePhotos.map(photo =>
+            <div style={{ marginTop: "10px" }} className='card col-sm-2 p-0' key={photo.id}>
+              <div className="position-relative" >
+                <div className="image-container">
+                <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
+                </div>
+                <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
+              </div>
+              <button onClick={() => handleOrder(photo.name)} className='my-2 mx-auto' style={{width: '95%'}}>Inquiry Now</button>
+            </div>
+          )}
+        </div>
+      </div>
         </section>
         <section
           style={{
@@ -285,6 +309,7 @@ function App() {
                             label="Message"
                             id="validationTextarea"
                             required
+                            name="message"
                           />
                         </MDBCol>
                       </MDBRow>
@@ -299,133 +324,7 @@ function App() {
           </MDBContainer>
         </section>
       </main>
-      <footer>
-        <MDBFooter
-          bgColor="light"
-          className="text-center text-lg-start text-muted"
-        >
-          <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div className="me-5 d-none d-lg-block">
-              <span>Get connected with us on Social Media :</span>
-            </div>
-
-            <div>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="facebook-f" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="twitter" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="google" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="instagram" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="linkedin" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="github" />
-              </a>
-            </div>
-          </section>
-
-          <section className="">
-            <MDBContainer className="text-center text-md-start mt-5">
-              <MDBRow className="mt-3">
-                <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">
-                    <MDBIcon icon="gem" className="me-3" />
-                    Company name
-                  </h6>
-                  <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                  </p>
-                </MDBCol>
-
-                <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Angular
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      React
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Vue
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Laravel
-                    </a>
-                  </p>
-                </MDBCol>
-
-                <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Pricing
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Settings
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Orders
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Help
-                    </a>
-                  </p>
-                </MDBCol>
-
-                <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-                  <p>
-                    <MDBIcon icon="home" className="me-2" />
-                    New York, NY 10012, US
-                  </p>
-                  <p>
-                    <MDBIcon icon="envelope" className="me-3" />
-                    info@example.com
-                  </p>
-                  <p>
-                    <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
-                  </p>
-                  <p>
-                    <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
-                  </p>
-                </MDBCol>
-              </MDBRow>
-            </MDBContainer>
-          </section>
-
-          <div
-            className="text-center p-4"
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-          >
-            © 2021 Copyright:
-            <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-              Kheteshvar Steel Furniture
-            </a>
-          </div>
-        </MDBFooter>
-      </footer>
+      {/* <Footer/> */}
     </>
   );
 }

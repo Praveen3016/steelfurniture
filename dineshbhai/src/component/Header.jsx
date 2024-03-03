@@ -18,7 +18,6 @@ function Header() {
               <Nav.Link ><Link to="/" className='listt text-black' >Home</Link></Nav.Link>
               <Nav.Link ><Link to="/product" className='listt text-black' >Product</Link></Nav.Link>
               <Nav.Link ><Link to="/about" className='listt text-black' >About</Link></Nav.Link>
-              <Nav.Link ><Link to="/catalouge" className='listt text-black' >Gallery</Link></Nav.Link>
               <Nav.Link ><Link to="/privacypolicy" className='listt text-black' >Privacy Policy</Link></Nav.Link>
             </div>
             <div className='contact'>
@@ -32,4 +31,5 @@ function Header() {
   </header>
   )
 }
+
 export default Header
