@@ -175,7 +175,49 @@ function App() {
           </div>
           <button>View More</button>
         </section>
-      
+        <section  id="sec2">
+       
+        <div className='container mt-4'>
+        <p style={{ color: "red" }} className="p1 text-center fw-bold ">
+            Products
+          </p>
+          <h2 className="text-center">Products We Provide</h2>
+          <p id="p2">
+            We are specialists in information technologies and we apply our full
+            range of talent to creating the perfect solution for each client's
+            needs.
+          </p>
+
+        <div className=' row col-sm-12  d-flex align-items-center justify-content-center px-2 mb-4'>
+          {firstFivePhotos.map(photo =>
+             <div id="" className="col-sm-3 h-50 px-2">
+             <div className=" " id="card1">
+               <p
+                 style={{ color: "rgb(255, 111, 0)" }}
+                 className="d-flex  align-items-center justify-content-center fw-bold  fs-6 "
+               >
+                {photo.name}
+               </p>
+               <img
+                 className="img-fluid w-100 "
+                 src={photo.src}
+                 alt=""
+               />
+               {/* <p id="p4">
+                 A diamond jewellery software to Manage Jewelry Business.
+               </p> */}
+             </div>
+           </div>
+          )}
+        </div>
+        <div className="w-100 d-flex justify-content-center">
+        <button >View More</button>
+
+
+        </div>
+      </div>
+
+        </section>
         <section
           id="sec3"
           style={{
@@ -208,23 +250,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
-        <div className='container-fluid'>
-        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
-          {firstFivePhotos.map(photo =>
-            <div style={{ marginTop: "10px" }} className='card col-sm-2 p-0' key={photo.id}>
-              <div className="position-relative" >
-                <div className="image-container">
-                <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
-                </div>
-                <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
-              </div>
-              <button onClick={() => handleOrder(photo.name)} className='my-2 mx-auto' style={{width: '95%'}}>Inquiry Now</button>
-            </div>
-          )}
-        </div>
-      </div>
-        </section>
+   
         <section
           style={{
             display: "flex",
