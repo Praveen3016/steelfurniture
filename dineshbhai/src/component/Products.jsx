@@ -27,7 +27,7 @@ function Products() {
   return (
     <div className=" ">
       {data && (  
-        <MDBCard style={{ zIndex: "99999", left: "20%", top: "100px" }} className="position-absolute position-fixed col-sm-7 align-items-center justify-content-center ">
+        <MDBCard style={{ zIndex: "1", maxWidth: '90%', top: '100px'}} className="position-absolute col-sm-7 align-items-center justify-content-center d-flex">
           <div style={{cursor:"pointer"}} className='end-0 position-absolute  top-0  p-3 fs-4 fw-bolder  ' onClick={() => setdata(false)} >
           <ImCancelCircle />
           </div>
@@ -55,7 +55,7 @@ function Products() {
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12'>
-                  <MDBTextArea id='validationTextarea' value={selectedPhotoName} placeholder='Required example textarea' disabled required />
+                  <MDBTextArea id='validationTextarea' value={selectedPhotoName} disabled required />
                 </MDBCol>
               </MDBRow>
               <button className='mt-4' size='lg'>Submit</button>
@@ -63,34 +63,22 @@ function Products() {
           </MDBCardBody>
         </MDBCard>
       )}
-      <div className='container-fluid pt-5'>
-        <h2 className='text-center pt-5'>All Products</h2>
+      <div className='container-fluid'>
         <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
           <div>
-            
-          </div >
-          <div className=' row col-sm-12  d-flex align-items-center justify-content-center px-2 mb-4's>
-          {photos.map(photo =>
-             <div id="" className="col-sm-3 h-50 px-2">
-             <div className=" " id="card1">
-               <p
-                 style={{ color: "rgb(255, 111, 0)" }}
-                 className="d-flex  align-items-center justify-content-center fw-bold  fs-6 "
-               >
-                {photo.name}
-               </p>
-               <img
-                 className="img-fluid w-100 "
-                 src={photo.src}
-                 alt=""
-               />
-               <p id="p4">
-                 A diamond jewellery software to Manage Jewelry Business.
-               </p>
-             </div>
-           </div>
-          )}
+            <h1>hello</h1>
           </div>
+          {photos.map(photo =>
+            <div style={{ marginTop: "10px" }} className='card col-sm-3 p-0' key={photo.id}>
+              <div className="position-relative" >
+                <div className="image-container">
+                <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
+                </div>
+                <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
+              </div>
+              <button onClick={() => handleOrder(photo.name)} className='my-2 mx-auto' style={{width: '95%'}}>Inquiry Now</button>
+            </div>
+          )}
         </div>
       </div>
       <Whatsapp />
