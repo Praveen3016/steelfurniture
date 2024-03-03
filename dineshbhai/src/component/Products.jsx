@@ -55,7 +55,7 @@ function Products() {
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12'>
-                  <MDBTextArea label='Message' id='validationTextarea' value={selectedPhotoName} placeholder='Required example textarea' disabled required />
+                  <MDBTextArea id='validationTextarea' value={selectedPhotoName} placeholder='Required example textarea' disabled required />
                 </MDBCol>
               </MDBRow>
               <button className='mt-4' size='lg'>Submit</button>
