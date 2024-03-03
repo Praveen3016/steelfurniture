@@ -26,7 +26,7 @@ function Products() {
 
   return (
     <div className=" ">
-      {/* {data && (  
+      {data && (  
         <MDBCard style={{ zIndex: "99999", left: "20%", top: "100px" }} className="position-absolute position-fixed col-sm-7 align-items-center justify-content-center ">
           <div style={{cursor:"pointer"}} className='end-0 position-absolute  top-0  p-3 fs-4 fw-bolder  ' onClick={() => setdata(false)} >
           <ImCancelCircle />
@@ -62,7 +62,7 @@ function Products() {
             </form>
           </MDBCardBody>
         </MDBCard>
-      )} */}
+      )}
       <div className='container-fluid pt-5'>
         <h2 className='text-center pt-5'>All Products</h2>
         <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
@@ -84,9 +84,9 @@ function Products() {
                  src={photo.src}
                  alt=""
                />
-               {/* <p id="p4">
+               <p id="p4">
                  A diamond jewellery software to Manage Jewelry Business.
-               </p> */}
+               </p>
              </div>
            </div>
           )}
