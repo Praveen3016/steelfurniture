@@ -96,7 +96,7 @@ function Contact() {
                         size="lg"
                         id="form1"
                         type="text"
-                        name="name"
+                        name="First Name"
                       />
                     </MDBCol>
                     <MDBCol md="6">
@@ -106,7 +106,7 @@ function Contact() {
                         size="lg"
                         id="form1"
                         type="text"
-                        name="Name"
+                        name="Last Name"
                       />
                     </MDBCol>
                     <MDBCol md="6">
@@ -116,7 +116,7 @@ function Contact() {
                         size="lg"
                         id="form1"
                         type="text"
-                        name="Name"
+                        name="Email"
                       />
                     </MDBCol>
                     <MDBCol md="6">
@@ -135,6 +135,7 @@ function Contact() {
                           {/* <label>Select a State:</label> */}
                           <select className="form-select"
                             value={selectedState}
+                            name="State"
                             onChange={handleStateChange}
                           >
                             <option value="" disabled hidden>Select a State</option>
@@ -152,6 +153,7 @@ function Contact() {
                           <select className="form-select"
                             value={selectedDistrict}
                             onChange={handleDistrictChange}
+                            name="District"
                           >
                             <option value="" disabled hidden>Select a District</option>
                             <option value="">-- Select --</option>
