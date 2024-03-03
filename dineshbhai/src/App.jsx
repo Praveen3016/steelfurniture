@@ -22,7 +22,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const { photos } = useContext(Usercontext);
-  const firstFivePhotos = photos.slice(0, 3);
+  const firstFivePhotos = photos.slice(0, 5);
 
   return (
     <>
@@ -210,9 +210,9 @@ function App() {
         </section>
         <section>
         <div className='container-fluid'>
-        <div className='row col-sm-12 gap-2 d-flex align-items-center justify-content-center px-2 mb-4'>
+        <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
           {firstFivePhotos.map(photo =>
-            <div style={{ marginTop: "10px" }} className='card col-sm-3 p-0' key={photo.id}>
+            <div style={{ marginTop: "10px" }} className='card col-sm-2 p-0' key={photo.id}>
               <div className="position-relative" >
                 <div className="image-container">
                 <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
