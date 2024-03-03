@@ -8,7 +8,6 @@ import Layout from './Layout.jsx';
 import Contect from './component/Contact.jsx';
 import About from './component/About.jsx';
 import Privacypolicy from './component/Privacypolicy.jsx';
-import Catalouge from './component/Catalouge.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
