@@ -7,7 +7,7 @@ import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
 import { useContext } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import stateDistrictsMap from '../data.json'
 import {
   MDBContainer,
@@ -41,6 +41,20 @@ function App() {
   const handleDistrictChange = (e) => {
     setSelectedDistrict(e.target.value);
   };
+
+
+  const [gradientColor, setGradientColor] = useState('#ff0000'); // Initial color
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+      setGradientColor(randomColor);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
 
   return (
     <>
@@ -95,16 +109,14 @@ function App() {
 
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
-            <div className="d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  ">
-              <h1 className="text-white heading mb-4 fw-bold">
+            <div className="d-flex flex-column ps-lg-5">
+              <h1 className="heading mb-4 fw-bold heading" style={{backgroundImage: `linear-gradient(to right, ${gradientColor}, #ffffff)`}}>
                 Kheteshwar Steel Factory .
               </h1>
-              <p className="text-white    ">
-                Self-service is now becoming an expectation in the B2B metal
-                manufacturing industry. Make buying from your business easy with
-                built-in CPQ, plus a 2D or 3D visualizer and guided selling..
+              <p className="text-white paragraph" style={{maxWidth: '90%'}}>
+              Kheteshwar Steel Furniture is Rajasthan’s leading iron furniture manufacturer company since 2015 and we known for better quality products and better quality service and our first priority in customer satisfaction we make hospital furniture, hostel furniture, collage furniture, school furniture, and office furniture’s.  
               </p>
-              <button className="">All Products</button>
+              <button className="btn btn-primary">Contact Us</button>
             </div>
           </div>
         </section>
