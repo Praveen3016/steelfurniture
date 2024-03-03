@@ -116,7 +116,7 @@ function App() {
               <p className="text-white paragraph" style={{maxWidth: '90%'}}>
               Kheteshwar Steel Furniture is Rajasthan’s leading iron furniture manufacturer company since 2015 and we known for better quality products and better quality service and our first priority in customer satisfaction we make hospital furniture, hostel furniture, collage furniture, school furniture, and office furniture’s.  
               </p>
-              <button className="btn btn-primary">Contact Us</button>
+              <button className="button">Contact Us</button>
             </div>
           </div>
         </section>
@@ -346,8 +346,8 @@ function App() {
                           />
                         </MDBCol>
                       </MDBRow>
-                      <MDBRow className="mb-3">
-                        <MDBCol md={6}>
+                      <MDBRow>
+                        <MDBCol md={6} className="mb-4">
                           {/* <label>Select a State:</label> */}
                           <select className="form-select"
                             value={selectedState}
@@ -364,7 +364,7 @@ function App() {
                             )}
                           </select>
                         </MDBCol>
-                        <MDBCol md={6}>
+                        <MDBCol md={6} className="mb-4">
                           <select className="form-select"
                             value={selectedDistrict}
                             onChange={handleDistrictChange}

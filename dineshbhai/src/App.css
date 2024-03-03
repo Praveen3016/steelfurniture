@@ -88,6 +88,7 @@
   border: none;
   transition: 0.5s ;
 }
+
 #sec1 .part1 button:hover,
 #sec2 button:hover,#sec3 button:hover {
   background-color: rgb(255, 111, 0);
