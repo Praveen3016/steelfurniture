@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
       <h2>ddd</h2>
-      <h1>fuck you ...</h1>
+      <h1></h1>
       <Whatsapp/>
       <Calllogo/>
     </div>
