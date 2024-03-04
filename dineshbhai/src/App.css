@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.font-m{
+  font-family: "Montserrat", sans-serif;
 }
 .nav {
   display: flex;
@@ -38,6 +42,7 @@
 .paragraph {
   text-align: justify;
   font-size: 15px;
+  max-width: 90%;
 }
 /* .nav .contact button,
 #sec1 .part1 button {
@@ -112,7 +117,7 @@
 }
 #sec2 h2,#sec3 h2,#sec4 h2 {
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-size: 2rem;
   padding: 1rem 0rem;
 }

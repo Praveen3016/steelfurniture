@@ -8,6 +8,7 @@ import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
 import { useContext } from "react";
+import { CardDefault } from "./component/CardDefault";
 import {
   MDBContainer,
   MDBRow,
@@ -88,25 +89,21 @@ function App() {
 
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
-            <div className="d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  ">
-              <h1 className="heading mb-4 fw-bold" style={{backgroundImage: `linear-gradient(to right, ${gradientColor}, #ffffff)`, textAlign: 'justify', wordSpacing: 'normal'}}>
-                Kheteshwar Steel Factory .
+            <div className="d-flex flex-column w-sm-50 w-100 ps-1 ps-sm-5  ">
+              <h1 className="heading mb-3 fw-bold text-warning">
+                Kheteshwar Steel Furniture.
               </h1>
-              <p className="text-white    ">
-                Self-service is now becoming an expectation in the B2B metal
-                manufacturing industry. Make buying from your business easy with
-                built-in CPQ, plus a 2D or 3D visualizer and guided selling..
+              <p className="text-white paragraph">
+              Kheteshwar Steel Furniture, Rajasthan's premier iron furniture manufacturer since 2007. Renowned for superior quality products and service, customer satisfaction is our utmost priority. Specializing in a diverse range of furniture including hospital, hostel, college, and school furniture, alongside domestic almirahs and office furnishings. Experience excellence with Kheteshwar Steel Furniture.
               </p>
+              <CardDefault/>
             </div>
           </div>
         </section>
         <section id="sec2">
-          <p id="p1">_WHAT WE OFFER_</p>
-          <h2>Services We Offer</h2>
-          <p id="p2">
-            We are specialists in information technologies and we apply our full
-            range of talent to creating the perfect solution for each client's
-            needs.
+          <h2 style={{color: '#d90700'}} className="font-m fw-bold">Services We Offer</h2>
+          <p id="p2" style={{maxWidth: '90%'}}>
+          We are experts in steel furniture craftsmanship, dedicating our entire range of skills to crafting the ideal solutions for every client's requirements.
           </p>
           <div className="cards container row   ">
             <div id="" className="col-sm-3  px-2">
@@ -197,7 +194,7 @@ function App() {
         >
           <div className="container">
             <div className="row col-sm-12">
-              <p className="p1 mb-4 ">ABOUT US_</p>
+              <p className="p1 mb-4 font-m fw-bold fs-4" style={{color: '#d90700'}}>ABOUT US</p>
               <div className=" col-sm-6">
                 <img src="public\image\OIP.jpg" className="img-fluid" alt="" />
               </div>

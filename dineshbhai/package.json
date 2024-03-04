@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "@material-tailwind/react": "^2.1.9",
     "@mui/material": "^5.15.11",
     "bootstrap": "^5.3.3",
     "mdb-react-ui-kit": "^7.2.0",
@@ -31,6 +32,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "tailwindcss": "^3.4.1",
     "vite": "^5.1.4"
   }
 }
