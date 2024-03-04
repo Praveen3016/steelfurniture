@@ -8,7 +8,8 @@ import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
 import { useContext } from "react";
-import Footer from "./component/Footer";
+import Nav from 'react-bootstrap/Nav';
+import {Link} from 'react-router-dom'
 import {
   MDBContainer,
   MDBRow,
@@ -86,7 +87,7 @@ function App() {
                 manufacturing industry. Make buying from your business easy with
                 built-in CPQ, plus a 2D or 3D visualizer and guided selling..
               </p>
-              <button className="">All Products</button>
+              <button className="">  <Link to="/product" className='listt text-black' >All Products </Link>  </button>
             </div>
           </div>
         </section>
@@ -215,11 +216,11 @@ function App() {
             <div style={{ marginTop: "10px" }} className='card col-sm-2 p-0' key={photo.id}>
               <div className="position-relative" >
                 <div className="image-container">
-                <img style={{ cursor: "pointer", minHeight: '300px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
+                <img style={{ cursor: "pointer", minHeight: '290px', maxHeight: '300px', width: '100%'}} className='img-fluid img-hover' src={photo.src} alt="" />
                 </div>
                 <label style={{ left: "0", bottom: "0px", color: "rgb(255, 111, 0)", cursor: "pointer" }} className="position-absolute lables bg-white w-100 p-3" >{photo.name}</label>
               </div>
-              <button onClick={() => handleOrder(photo.name)} className='my-2 mx-auto' style={{width: '95%'}}>Inquiry Now</button>
+              <button onClick={() => handleOrder(photo.name)} className=' mx-auto' style={{width: '100%'}}>Inquiry Now</button>
             </div>
           )}
         </div>
