@@ -39,7 +39,7 @@ const Footer = () => {
                 <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">
                     <MDBIcon icon="gem" className="me-3" />
-                    Company name
+                    Kheteshvar Steel Factory
                   </h6>
                   <p>
                     Here you can use rows and columns to organize your footer
@@ -52,22 +52,22 @@ const Footer = () => {
                   <h6 className="text-uppercase fw-bold mb-4">Products</h6>
                   <p>
                     <a href="#!" className="text-reset">
-                      Angular
+                      Steel door
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-reset">
-                      React
+                    Steel Staircase
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-reset">
-                      Vue
+                      Steel Designs
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-reset">
-                      Laravel
+                      Any Steel Work
                     </a>
                   </p>
                 </MDBCol>
@@ -100,11 +100,11 @@ const Footer = () => {
                   <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                   <p>
                     <MDBIcon icon="home" className="me-2" />
-                    New York, NY 10012, US
+                    303 aj Jawal , Rajasthan .
                   </p>
                   <p>
                     <MDBIcon icon="envelope" className="me-3" />
-                    info@example.com
+                    praveens@gmail.com@example.com
                   </p>
                   <p>
                     <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88

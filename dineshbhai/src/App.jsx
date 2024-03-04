@@ -87,7 +87,7 @@ function App() {
                 manufacturing industry. Make buying from your business easy with
                 built-in CPQ, plus a 2D or 3D visualizer and guided selling..
               </p>
-              <button className="">  <Link to="/product" className='listt text-black' >All Products </Link>  </button>
+              <button className="">  <Link to="/product" className='listt text-black' >All Products </Link></Nav.Link>  </button>
             </div>
           </div>
         </section>

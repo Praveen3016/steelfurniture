@@ -27,7 +27,7 @@ function Products() {
   return (
     <div className=" ">
       {data && (  
-        <MDBCard style={{ zIndex: "99999", left: "20%", top: "100px" }} className="position-absolute position-fixed col-sm-7 align-items-center justify-content-center ">
+        <MDBCard style={{ zIndex: "1", maxWidth: '90%', top: '100px'}} className="position-absolute col-sm-7 align-items-center justify-content-center d-flex">
           <div style={{cursor:"pointer"}} className='end-0 position-absolute  top-0  p-3 fs-4 fw-bolder  ' onClick={() => setdata(false)} >
           <ImCancelCircle />
           </div>
@@ -55,7 +55,7 @@ function Products() {
               </MDBRow>
               <MDBRow>
                 <MDBCol md='12'>
-                  <MDBTextArea label='Message' id='validationTextarea' value={selectedPhotoName} placeholder='Required example textarea' disabled required />
+                  <MDBTextArea id='validationTextarea' value={selectedPhotoName} disabled required />
                 </MDBCol>
               </MDBRow>
               <button className='mt-4' size='lg'>Submit</button>

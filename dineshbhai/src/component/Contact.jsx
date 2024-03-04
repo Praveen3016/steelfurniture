@@ -2,6 +2,11 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaAddressBook } from "react-icons/fa";
+import Calllogo from "./Calllogo";
+import Whatsapp from "./Whatsapp";
+import ScrollToTopButton from "./ScrollToTopButton";
+import { useState } from "react";
+import stateDistrictsMap from '../../data.json'
 import {
   MDBRow,
   MDBCol,
@@ -11,6 +16,25 @@ import {
   MDBTextArea,
 } from "mdb-react-ui-kit";
 function Contact() {
+
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedDistrict, setSelectedDistrict] = useState("");
+  const [districts, setDistricts] = useState([]);
+
+  const handleStateChange = (e) => {
+    const state = e.target.value;
+    setSelectedState(state);
+    setSelectedDistrict("");
+    const selectedStateData = stateDistrictsMap.states.find(
+      (item) => item.state === state
+    );
+    setDistricts(selectedStateData ? selectedStateData.districts : []);
+  };
+
+  const handleDistrictChange = (e) => {
+    setSelectedDistrict(e.target.value);
+  };
+  
   return (
     <div className="container-fluid ">
       <div className="row col-sm-12 align-items-center  justify-content-center  ">
@@ -72,7 +96,7 @@ function Contact() {
                         size="lg"
                         id="form1"
                         type="text"
-                        name="name"
+                        name="First Name"
                       />
                     </MDBCol>
                     <MDBCol md="6">
@@ -82,7 +106,7 @@ function Contact() {
                         size="lg"
                         id="form1"
                         type="text"
-                        name="Name"
+                        name="Last Name"
                       />
                     </MDBCol>
                     <MDBCol md="6">
@@ -92,7 +116,7 @@ function Contact() {
                         size="lg"
                         id="form1"
                         type="text"
-                        name="Name"
+                        name="Email"
                       />
                     </MDBCol>
                     <MDBCol md="6">
@@ -106,6 +130,41 @@ function Contact() {
                       />
                     </MDBCol>
                   </MDBRow>
+                  <MDBRow className="mb-3">
+                        <MDBCol md={6}>
+                          {/* <label>Select a State:</label> */}
+                          <select className="form-select"
+                            value={selectedState}
+                            name="State"
+                            onChange={handleStateChange}
+                          >
+                            <option value="" disabled hidden>Select a State</option>
+                            <option value="">-- Select --</option>
+                            {stateDistrictsMap.states.map(
+                              (stateData, index) => (
+                                <option key={index} value={stateData.state}>
+                                  {stateData.state}
+                                </option>
+                              )
+                            )}
+                          </select>
+                        </MDBCol>
+                        <MDBCol md={6}>
+                          <select className="form-select"
+                            value={selectedDistrict}
+                            onChange={handleDistrictChange}
+                            name="District"
+                          >
+                            <option value="" disabled hidden>Select a District</option>
+                            <option value="">-- Select --</option>
+                            {districts.map((district, index) => (
+                              <option key={index} value={district}>
+                                {district}
+                              </option>
+                            ))}
+                          </select>
+                        </MDBCol>
+                      </MDBRow>
                   <MDBRow>
                     <MDBCol md="12">
                       <MDBInput
@@ -147,6 +206,9 @@ function Contact() {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <Calllogo/>
+      <Whatsapp/>
+      <ScrollToTopButton/>
     </div>
   );
 }
