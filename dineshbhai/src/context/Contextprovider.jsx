@@ -24,8 +24,18 @@ function Contextprovider({ children }) {
     // { id: "12", src: 'https://th.bing.com/th/id/OIP.21q1c5CsuozchstoZhREkgHaFL?rs=1&pid=ImgDetMain', width: 4, height: 3, name: "Jewelry Software" },
     // { id: "13", src: 'https://imgres.tailbase.com/rzdimg/prods/800/682200_1.jpg', width: 4, height: 3, name: "Jewelry Software" },
   ];
+
+  const [show , setshow] = useState(false)
+  const [img , setimg] = useState("");
+
+  function imgshow(img){
+    setimg(img)
+    setshow(true);
+    console.log("hello")
+
+  }
   return (
-    <Usercontext.Provider value={({ user, setuser ,photos })}>
+    <Usercontext.Provider value={({ user, setuser ,photos ,setshow ,show ,img ,setimg , imgshow})}>
       {children}
     </Usercontext.Provider>
   )

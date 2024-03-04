@@ -8,6 +8,7 @@ import Layout from './Layout.jsx';
 import Contect from './component/Contact.jsx';
 import About from './component/About.jsx';
 import Privacypolicy from './component/Privacypolicy.jsx';
+import Contextprovider from './context/Contextprovider.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
@@ -22,6 +23,9 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Contextprovider> 
      <RouterProvider router={router} />
+     </Contextprovider>
+
   </React.StrictMode>,
 )
