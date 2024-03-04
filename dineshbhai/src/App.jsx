@@ -1,15 +1,13 @@
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
-import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
+import { useState,useEffect } from "react";
 import whatsapp from "../public/image/whatsapp.png";
 import call from "../public/image/call.png";
 import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
 import { useContext } from "react";
-import Nav from 'react-bootstrap/Nav';
-import {Link} from 'react-router-dom'
 import {
   MDBContainer,
   MDBRow,
@@ -24,6 +22,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const { photos } = useContext(Usercontext);
   const firstFivePhotos = photos.slice(0, 5);
+
+  const [gradientColor, setGradientColor] = useState('#ff0000'); // Initial color
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      
+      const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+      setGradientColor(randomColor);
+    }, 2000); 
+
+    return () => clearInterval(interval);
+  }, []); 
 
   return (
     <>
@@ -79,7 +89,7 @@ function App() {
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className="d-flex flex-column w-sm-50 w-75 ps-1 ps-sm-5  ">
-              <h1 className="text-white heading mb-4 fw-bold">
+              <h1 className="heading mb-4 fw-bold" style={{backgroundImage: `linear-gradient(to right, ${gradientColor}, #ffffff)`, textAlign: 'justify', wordSpacing: 'normal'}}>
                 Kheteshwar Steel Factory .
               </h1>
               <p className="text-white    ">
@@ -87,7 +97,6 @@ function App() {
                 manufacturing industry. Make buying from your business easy with
                 built-in CPQ, plus a 2D or 3D visualizer and guided selling..
               </p>
-              <button className="">  <Link to="/product" className='listt text-black' >All Products </Link></Nav.Link>  </button>
             </div>
           </div>
         </section>
