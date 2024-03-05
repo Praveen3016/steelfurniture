@@ -279,8 +279,8 @@ function App() {
                           />
                         </MDBCol>
                       </MDBRow>
-                      <MDBRow className="mb-3">
-                        <MDBCol md={6}>
+                      <MDBRow>
+                        <MDBCol md={6} className="mb-4">
                           {/* <label>Select a State:</label> */}
                           <select
                             className="form-select"
@@ -301,7 +301,7 @@ function App() {
                             )}
                           </select>
                         </MDBCol>
-                        <MDBCol md={6}>
+                        <MDBCol md={6} className="mb-4">
                           <select
                             className="form-select"
                             value={selectedDistrict}
