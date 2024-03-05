@@ -499,6 +499,10 @@ p {
   background-image: linear-gradient(to right, white, white, rgba(255, 160, 122, 0.151));
 }
 
-.none {
-  display: none !important;
+
+.backgraundimage{
+  background-image: linear-gradient(to right, rgba(3, 3, 28, 0.9), rgba(66, 66, 66, 0.434), rgba(22, 19, 18, 0.151)), url("https://cdn.images.express.co.uk/img/dynamic/22/590x/steel-613086.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size:100% , 100%;
 }

@@ -4,17 +4,6 @@ import Whatsapp from './Whatsapp'
 import Calllogo from './Calllogo'
 import ScrollToTopButton from './ScrollToTopButton'
 import Usercontext from '../context/usecontext';
-import { ImCancelCircle } from "react-icons/im";
-import {
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBTextArea
-} from 'mdb-react-ui-kit';
-import { Button } from 'bootstrap'
-
 function Products() {
   const [data, setdata] = useState(false);
   const [selectedPhotoName, setSelectedPhotoName] = useState("");
