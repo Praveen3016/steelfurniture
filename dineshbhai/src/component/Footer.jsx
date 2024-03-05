@@ -39,7 +39,7 @@ const Footer = () => {
                 <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">
                     <MDBIcon icon="gem" className="me-3" />
-                    Kheteshvar Steel Factory
+                    श्री KSF Steel Factory
                   </h6>
                   <p>
                     Here you can use rows and columns to organize your footer
@@ -104,7 +104,7 @@ const Footer = () => {
                   </p>
                   <p>
                     <MDBIcon icon="envelope" className="me-3" />
-                    praveens@gmail.com@example.com
+                    ksfsteelfactory@gmail.com
                   </p>
                   <p>
                     <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
@@ -123,7 +123,7 @@ const Footer = () => {
           >
             © 2021 Copyright:
             <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-              Kheteshvar Steel Furniture
+            श्री KSF Steel Factory
             </a>
           </div>
         </MDBFooter>
