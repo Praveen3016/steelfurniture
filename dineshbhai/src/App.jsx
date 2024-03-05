@@ -90,8 +90,8 @@ function App() {
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className="d-flex flex-column w-sm-50 w-100 ps-1 ps-sm-5  ">
-              <h1 className="heading mb-3 fw-bold text-warning">
-                Kheteshwar Steel Furniture.
+              <h1 className="heading mb-3 mt-2 fw-bold text-warning">
+              श्री KSF Furniture Factory
               </h1>
               <p className="text-white paragraph">
                 Kheteshwar Steel Furniture, Rajasthan's premier iron furniture
@@ -294,7 +294,7 @@ function App() {
                             <option value="">-- Select --</option>
                             {stateDistrictsMap.states.map(
                               (stateData, index) => (
-                                
+
                                 <option key={index} value={stateData.state}>
                                   {stateData.state}
                                 </option>
