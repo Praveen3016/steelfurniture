@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+.aboutus h1,h2,h3,h4,p {
+  font-family: poppins !important;
+  text-align: justify;
+}
+.aboutus p{
+  font-size: 15px;
 }
 .font-m{
   font-family: "Montserrat", sans-serif;
@@ -53,6 +62,7 @@
 .card-container{
   min-height: 330px;
   transition: .3s ease;
+  background: linear-gradient();
 }
 .card-container:hover{
   scale: 1.05;
@@ -127,7 +137,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2.5rem 1rem;
-  background-image: linear-gradient(to right,white,white,rgba(255, 160, 122, 0.151));
+  background: linear-gradient(to right,white,white,rgba(255, 160, 122, 0.151));
 
 }
 #sec2 #p1,#sec3 .p1,#sec4 #p1 {

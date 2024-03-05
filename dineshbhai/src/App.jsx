@@ -2,15 +2,16 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
 import { useState, useEffect } from "react";
-import whatsapp from "../public/image/whatsapp.png";
-import call from "../public/image/call.png";
 import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
 import { useContext } from "react";
 import cardData from ".././CardData.json";
 import Card from "./component/Card";
-import stateDistrictsMap from '.././data.json'
+import stateDistrictsMap from ".././data.json";
+import Calllogo from "./component/Calllogo";
+import Whatsapp from "./component/Whatsapp";
+
 import {
   MDBContainer,
   MDBRow,
@@ -65,6 +66,7 @@ function App() {
     setSelectedDistrict(e.target.value);
   };
 
+  
   return (
     <>
       <div class="area">
@@ -81,41 +83,10 @@ function App() {
           <li></li>
         </ul>
       </div>
-      <div className="image-container">
-        <a href="https://wa.me/+919967745712">
-          <img
-            src={whatsapp}
-            alt=""
-            style={{
-              width: "50px",
-              position: "fixed",
-              bottom: "20px",
-              right: "15px",
-              zIndex: "100",
-            }}
-            className="scaling-image"
-          />
-        </a>
-      </div>
-      <div className="image-container">
-        <a href="tel:+9967745712">
-          <img
-            src={call}
-            alt=""
-            style={{
-              width: "50px",
-              position: "fixed",
-              bottom: "20px",
-              left: "15px",
-              zIndex: "100",
-            }}
-            className="scaling-image"
-          />
-        </a>
-      </div>
+      <Whatsapp />
+      <Calllogo />
+      <ScrollToTopButton />
       <main>
-        <ScrollToTopButton />
-
         <section id="sec1">
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className="d-flex flex-column w-sm-50 w-100 ps-1 ps-sm-5  ">
@@ -163,6 +134,7 @@ function App() {
             display: "flex",
             flexDirection: "row !important",
           }}
+          
         >
           <div className="container">
             <div className="row col-sm-12">
@@ -247,9 +219,12 @@ function App() {
           }}
           id="sec4"
         >
-          <p style={{ color: "red" }} className="p1 mb-4  fw-bold ">
-            Contact Us
-          </p>
+          <p
+                className="p1 mb-4 font-m fw-bold fs-4"
+                style={{ color: "#d90700" }}
+              >
+                CONTACT US
+              </p>
           <MDBContainer>
             <MDBRow className="justify-content-center align-items-center ">
               <div className="col-sm-5">
@@ -270,8 +245,8 @@ function App() {
                   <span>
                     <b>Address : </b>
                   </span>{" "}
-                  <mark>Shree Kheteshwar Steel Furniture</mark> Jawal Post offices ke pass,
-                  Sirohi - Jawal Rd, Jawal, Rajasthan 307801{" "}
+                  <mark>Shree Kheteshwar Steel Furniture</mark> Jawal Post
+                  offices ke pass, Sirohi - Jawal Rd, Jawal, Rajasthan 307801{" "}
                 </p>
               </div>
               <div className="col-xl-7 col-sm-8 col-md-11  ">
@@ -304,15 +279,18 @@ function App() {
                           />
                         </MDBCol>
                       </MDBRow>
-                      <MDBRow className="mb-3">
-                        <MDBCol md={6}>
+                      <MDBRow>
+                        <MDBCol md={6} className="mb-4">
                           {/* <label>Select a State:</label> */}
-                          <select className="form-select"
+                          <select
+                            className="form-select"
                             value={selectedState}
                             name="State"
                             onChange={handleStateChange}
                           >
-                            <option value="" disabled hidden>Select a State</option>
+                            <option value="" disabled hidden>
+                              Select a State
+                            </option>
                             <option value="">-- Select --</option>
                             {stateDistrictsMap.states.map(
                               (stateData, index) => (
@@ -323,13 +301,16 @@ function App() {
                             )}
                           </select>
                         </MDBCol>
-                        <MDBCol md={6}>
-                          <select className="form-select"
+                        <MDBCol md={6} className="mb-4">
+                          <select
+                            className="form-select"
                             value={selectedDistrict}
                             onChange={handleDistrictChange}
                             name="District"
                           >
-                            <option value="" disabled hidden>Select a District</option>
+                            <option value="" disabled hidden>
+                              Select a District
+                            </option>
                             <option value="">-- Select --</option>
                             {districts.map((district, index) => (
                               <option key={index} value={district}>
