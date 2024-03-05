@@ -13,11 +13,12 @@ import {
   MDBInput,
   MDBTextArea
 } from 'mdb-react-ui-kit';
+import { Button } from 'bootstrap'
 
 function Products() {
   const [data, setdata] = useState(false);
   const [selectedPhotoName, setSelectedPhotoName] = useState("");
-  const { photos ,setshow ,show ,img ,setimg , imgshow} = useContext(Usercontext);
+  const { photos , formshow, imgshow} = useContext(Usercontext);
 
   const handleOrder = (photoName) => {
     setSelectedPhotoName(photoName);
@@ -25,7 +26,7 @@ function Products() {
   };
 
   return (
-    <div className=" ">
+    <div  className=" backgraundcolor ">
      
       <div className='container-fluid pt-5'>
         <h2 className='text-center pt-5'>All Products</h2>
@@ -33,24 +34,22 @@ function Products() {
           <div>
             
           </div >
-          <div className=' row col-sm-12  d-flex align-items-center justify-content-center px-2 mb-4's>
+          <div className=' row col-sm-12 gap-4   d-flex align-items-center justify-content-center px-2 mb-4's>
           {photos.map(photo =>
-             <div id="" className="col-sm-3 h-50 px-2" key={photo.src} onClick={() =>{ imgshow(photo.src)} }>
-             <div className=" " id="card1">
+             <div id="" className="col-sm-3 h-50 px-2 border mt-5 bg-white shadow rounded-2   " key={photo.src}>
+             <div style={{height:"300px"}} className='mt-4' id="card1">
                <p
-                 style={{ color: "rgb(255, 111, 0)" }}
-                 className="d-flex  align-items-center justify-content-center fw-bold  fs-6 "
+                 style={{ color:'#d90700'  }}
+                 className="d-flex  align-items-center justify-content-center fw-bold fs-6 "
                >
                 {photo.name}
                </p>
-               <img
-                 className="img-fluid w-100 "
-                 src={photo.src}
+               <img style={{height:"200px"}}
+                 className="img-fluid  w-100  "
+                 src={photo.src}   onClick={() =>{ imgshow(photo.src)}  }
                  alt=""
                />
-               {/* <p id="p4">
-                 A diamond jewellery software to Manage Jewelry Business.
-               </p> */}
+               <button className='p-1 text-light mt-3  ' onClick={()=> {formshow(photo.name)}} > inquriy now </button>
              </div>
            </div>
           )}
