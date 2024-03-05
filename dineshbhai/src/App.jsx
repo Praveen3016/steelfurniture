@@ -294,6 +294,7 @@ function App() {
                             <option value="">-- Select --</option>
                             {stateDistrictsMap.states.map(
                               (stateData, index) => (
+                                
                                 <option key={index} value={stateData.state}>
                                   {stateData.state}
                                 </option>
