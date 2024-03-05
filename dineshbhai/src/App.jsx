@@ -11,6 +11,7 @@ import Card from "./component/Card";
 import stateDistrictsMap from ".././data.json";
 import Calllogo from "./component/Calllogo";
 import Whatsapp from "./component/Whatsapp";
+import Clientnumber from "./component/clientnumber";
 
 import {
   MDBContainer,
@@ -125,7 +126,7 @@ function App() {
             {showAll ? "Less" : "View More"}
           </button>
         </section>
-
+  
         <section
           id="sec3"
           style={{
@@ -164,6 +165,10 @@ function App() {
             </div>
           </div>
         </section>
+        <section>
+    <Clientnumber/>
+
+    </section>
         <section>
           {/* <div className="container-fluid">
             <div className="row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4">
