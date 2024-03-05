@@ -4,8 +4,8 @@ import Whatsapp from "./Whatsapp";
 import Calllogo from "./Calllogo";
 const Privacypolicy = () => {
   return (
-    <div className="container" style={{position: 'relative', top:'100px',marginBottom: '150px'}}>
-      <h1 className="fs-1">Privacy Policy</h1>
+    <div className="container aboutus" style={{position: 'relative', top:'100px',marginBottom: '120px'}}>
+      <h2 className="text-danger">Privacy Policy</h2>
       <p>Last updated: March 02, 2024</p>
       <p>
         This Privacy Policy describes Our policies and procedures on the
@@ -16,25 +16,19 @@ const Privacypolicy = () => {
       <p>
         We use Your Personal data to provide and improve the Service. By using
         the Service, You agree to the collection and use of information in
-        accordance with this Privacy Policy. This Privacy Policy has been
-        created with the help of the{" "}
-        <a
-          href="https://www.termsfeed.com/privacy-policy-generator/"
-          target="_blank"
-        >
-          Privacy Policy Generator
-        </a>
+        accordance with this Privacy Policy.
         .
       </p>
-      <h2>Interpretation and Definitions</h2>
-      <h3>Interpretation</h3>
+      <h4>Interpretation and Definitions</h4>
+      <h5>Interpretation</h5>
       <p>
         The words of which the initial letter is capitalized have meanings
         defined under the following conditions. The following definitions shall
         have the same meaning regardless of whether they appear in singular or
         in plural.
       </p>
-      <h3>Definitions</h3>
+      <br />
+      <h4>Definitions</h4>
       <p>For the purposes of this Privacy Policy:</p>
       <ul>
         <li>
@@ -134,9 +128,10 @@ const Privacypolicy = () => {
           </p>
         </li>
       </ul>
-      <h2>Collecting and Using Your Personal Data</h2>
-      <h3>Types of Data Collected</h3>
-      <h4>Personal Data</h4>
+      <br />
+      <h4>Collecting and Using Your Personal Data</h4>
+      <h4>Types of Data Collected</h4>
+      <h5>Personal Data</h5>
       <p>
         While using Our Service, We may ask You to provide Us with certain
         personally identifiable information that can be used to contact or
@@ -160,7 +155,8 @@ const Privacypolicy = () => {
           <p>Usage Data</p>
         </li>
       </ul>
-      <h4>Usage Data</h4>
+      <br />
+      <h5>Usage Data</h5>
       <p>Usage Data is collected automatically when using the Service.</p>
       <p>
         Usage Data may include information such as Your Device's Internet
@@ -182,7 +178,8 @@ const Privacypolicy = () => {
         visit our Service or when You access the Service by or through a mobile
         device.
       </p>
-      <h4>Information from Third-Party Social Media Services</h4>
+      <br />
+      <h5>Information from Third-Party Social Media Services</h5>
       <p>
         The Company allows You to create an account and log in to use the
         Service through the following Third-party Social Media Services:
@@ -208,7 +205,8 @@ const Privacypolicy = () => {
         registration or otherwise, You are giving the Company permission to use,
         share, and store it in a manner consistent with this Privacy Policy.
       </p>
-      <h4>Tracking Technologies and Cookies</h4>
+      <br />
+      <h5>Tracking Technologies and Cookies</h5>
       <p>
         We use Cookies and similar tracking technologies to track the activity
         on Our Service and store certain information. Tracking technologies used
@@ -240,7 +238,7 @@ const Privacypolicy = () => {
         when You go offline, while Session Cookies are deleted as soon as You
         close Your web browser. You can learn more about cookies on{" "}
         <a
-          href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
+          href=""
           target="_blank"
         >
           TermsFeed website
@@ -298,7 +296,8 @@ const Privacypolicy = () => {
         cookies, please visit our Cookies Policy or the Cookies section of our
         Privacy Policy.
       </p>
-      <h3>Use of Your Personal Data</h3>
+      <br />
+      <h5>Use of Your Personal Data</h5>
       <p>The Company may use Personal Data for the following purposes:</p>
       <ul>
         <li>
@@ -376,12 +375,14 @@ const Privacypolicy = () => {
           information with Service Providers to monitor and analyze the use of
           our Service, to contact You.
         </li>
+        <br />
         <li>
           <strong>For business transfers:</strong> We may share or transfer Your
           personal information in connection with, or during negotiations of,
           any merger, sale of Company assets, financing, or acquisition of all
           or a portion of Our business to another company.
         </li>
+        <br />
         <li>
           <strong>With Affiliates:</strong> We may share Your information with
           Our affiliates, in which case we will require those affiliates to
@@ -389,11 +390,13 @@ const Privacypolicy = () => {
           any other subsidiaries, joint venture partners or other companies that
           We control or that are under common control with Us.
         </li>
+        <br />
         <li>
           <strong>With business partners:</strong> We may share Your information
           with Our business partners to offer You certain products, services or
           promotions.
         </li>
+        <br />
         <li>
           <strong>With other users:</strong> when You share personal information
           or otherwise interact in the public areas with other users, such
@@ -405,12 +408,14 @@ const Privacypolicy = () => {
           view descriptions of Your activity, communicate with You and view Your
           profile.
         </li>
+        <br />
         <li>
           <strong>With Your consent</strong>: We may disclose Your personal
           information for any other purpose with Your consent.
         </li>
       </ul>
-      <h3>Retention of Your Personal Data</h3>
+      <br />
+      <h5>Retention of Your Personal Data</h5>
       <p>
         The Company will retain Your Personal Data only for as long as is
         necessary for the purposes set out in this Privacy Policy. We will
@@ -426,7 +431,8 @@ const Privacypolicy = () => {
         functionality of Our Service, or We are legally obligated to retain this
         data for longer time periods.
       </p>
-      <h3>Transfer of Your Personal Data</h3>
+      <br />
+      <h5>Transfer of Your Personal Data</h5>
       <p>
         Your information, including Personal Data, is processed at the Company's
         operating offices and in any other places where the parties involved in
@@ -446,7 +452,8 @@ const Privacypolicy = () => {
         a country unless there are adequate controls in place including the
         security of Your data and other personal information.
       </p>
-      <h3>Delete Your Personal Data</h3>
+      <br />
+      <h5>Delete Your Personal Data</h5>
       <p>
         You have the right to delete or request that We assist in deleting the
         Personal Data that We have collected about You.
@@ -466,21 +473,23 @@ const Privacypolicy = () => {
         Please note, however, that We may need to retain certain information
         when we have a legal obligation or lawful basis to do so.
       </p>
-      <h3>Disclosure of Your Personal Data</h3>
-      <h4>Business Transactions</h4>
+      <br />
+      <h4>Disclosure of Your Personal Data</h4>
+      <h5>Business Transactions</h5>
       <p>
         If the Company is involved in a merger, acquisition or asset sale, Your
         Personal Data may be transferred. We will provide notice before Your
         Personal Data is transferred and becomes subject to a different Privacy
         Policy.
       </p>
-      <h4>Law enforcement</h4>
+      <h5>Law enforcement</h5>
       <p>
         Under certain circumstances, the Company may be required to disclose
         Your Personal Data if required to do so by law or in response to valid
         requests by public authorities (e.g. a court or a government agency).
       </p>
-      <h4>Other legal requirements</h4>
+      <br />
+      <h5>Other legal requirements</h5>
       <p>
         The Company may disclose Your Personal Data in the good faith belief
         that such action is necessary to:
@@ -497,7 +506,8 @@ const Privacypolicy = () => {
         </li>
         <li>Protect against legal liability</li>
       </ul>
-      <h3>Security of Your Personal Data</h3>
+      <br />
+      <h5>Security of Your Personal Data</h5>
       <p>
         The security of Your Personal Data is important to Us, but remember that
         no method of transmission over the Internet, or method of electronic
@@ -505,7 +515,8 @@ const Privacypolicy = () => {
         means to protect Your Personal Data, We cannot guarantee its absolute
         security.
       </p>
-      <h2>Children's Privacy</h2>
+      <br />
+      <h5>Children's Privacy</h5>
       <p>
         Our Service does not address anyone under the age of 13. We do not
         knowingly collect personally identifiable information from anyone under
@@ -521,7 +532,8 @@ const Privacypolicy = () => {
         require Your parent's consent before We collect and use that
         information.
       </p>
-      <h2>Links to Other Websites</h2>
+      <br />
+      <h5>Links to Other Websites</h5>
       <p>
         Our Service may contain links to other websites that are not operated by
         Us. If You click on a third party link, You will be directed to that
@@ -532,7 +544,8 @@ const Privacypolicy = () => {
         We have no control over and assume no responsibility for the content,
         privacy policies or practices of any third party sites or services.
       </p>
-      <h2>Changes to this Privacy Policy</h2>
+      <br />
+      <h5>Changes to this Privacy Policy</h5>
       <p>
         We may update Our Privacy Policy from time to time. We will notify You
         of any changes by posting the new Privacy Policy on this page.
@@ -547,7 +560,9 @@ const Privacypolicy = () => {
         changes. Changes to this Privacy Policy are effective when they are
         posted on this page.
       </p>
-      <h2>Contact Us</h2>
+      <br />
+      <h5><mark><strong>Contact Us</strong></mark></h5>
+      <br />
       <p>
         If you have any questions about this Privacy Policy, You can contact us:
       </p>
