@@ -34,7 +34,7 @@ function Contact() {
   const handleDistrictChange = (e) => {
     setSelectedDistrict(e.target.value);
   };
-  
+
   return (
     <div className="container-fluid backgraundcolor ">
       <div className="row col-sm-12 align-items-center  justify-content-center  ">
@@ -131,40 +131,40 @@ function Contact() {
                     </MDBCol>
                   </MDBRow>
                   <MDBRow className="mb-3">
-                        <MDBCol md={6}>
-                          {/* <label>Select a State:</label> */}
-                          <select className="form-select"
-                            value={selectedState}
-                            name="State"
-                            onChange={handleStateChange}
-                          >
-                            <option value="" disabled hidden>Select a State</option>
-                            <option value="">-- Select --</option>
-                            {stateDistrictsMap.states.map(
-                              (stateData, index) => (
-                                <option key={index} value={stateData.state}>
-                                  {stateData.state}
-                                </option>
-                              )
-                            )}
-                          </select>
-                        </MDBCol>
-                        <MDBCol md={6}>
-                          <select className="form-select"
-                            value={selectedDistrict}
-                            onChange={handleDistrictChange}
-                            name="District"
-                          >
-                            <option value="" disabled hidden>Select a District</option>
-                            <option value="">-- Select --</option>
-                            {districts.map((district, index) => (
-                              <option key={index} value={district}>
-                                {district}
-                              </option>
-                            ))}
-                          </select>
-                        </MDBCol>
-                      </MDBRow>
+                    <MDBCol md={6}>
+                      {/* <label>Select a State:</label> */}
+                      <select className="form-select"
+                        value={selectedState}
+                        name="State"
+                        onChange={handleStateChange}
+                      >
+                        <option value="" disabled hidden>Select a State</option>
+                        <option value="">-- Select --</option>
+                        {stateDistrictsMap.states.map(
+                          (stateData, index) => (
+                            <option key={index} value={stateData.state}>
+                              {stateData.state}
+                            </option>
+                          )
+                        )}
+                      </select>
+                    </MDBCol>
+                    <MDBCol md={6}>
+                      <select className="form-select"
+                        value={selectedDistrict}
+                        onChange={handleDistrictChange}
+                        name="District"
+                      >
+                        <option value="" disabled hidden>Select a District</option>
+                        <option value="">-- Select --</option>
+                        {districts.map((district, index) => (
+                          <option key={index} value={district}>
+                            {district}
+                          </option>
+                        ))}
+                      </select>
+                    </MDBCol>
+                  </MDBRow>
                   <MDBRow>
                     <MDBCol md="12">
                       <MDBInput
@@ -206,9 +206,9 @@ function Contact() {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <Calllogo/>
-      <Whatsapp/>
-      <ScrollToTopButton/>
+      <Calllogo />
+      <Whatsapp />
+      <ScrollToTopButton />
     </div>
   );
 }
