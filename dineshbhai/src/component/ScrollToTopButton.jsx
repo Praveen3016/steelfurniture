@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <div className={`scroll-to-top ${isVisible ? 'show' : 'hide'}`} onClick={scrollToTop}>
+    <div className={`scroll-to-top ${isVisible ? 'show' : 'hide'}`} onClick={scrollToTop} style={{position: "fixed",zIndex:'100'}}>
       <FaArrowUp />
     </div>
   );
