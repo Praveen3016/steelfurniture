@@ -195,7 +195,7 @@ p {
 #sec2 .cards {
   width: 100%;
   padding-top: 2rem;
-  max-height: 380px;
+  /* max-height: 380px; */
 }
 
 #sec2 .cards #card1 {
