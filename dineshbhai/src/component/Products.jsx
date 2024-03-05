@@ -29,14 +29,14 @@ function Products() {
     <div className=" backgraundcolor ">
 
       <div className='container-fluid pt-5'>
-        <h2 className='text-center pt-5'>All Products</h2>
+        <h2 className='text-center pt-5'  style={{ color: '#d90700' }}   >All Products</h2>
         <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
           <div>
 
           </div >
           <div className=' row col-sm-12 gap-4   d-flex align-items-center justify-content-center px-2 mb-4' s>
             {photos.map(photo =>
-              <div id="" className="col-sm-3 h-50 px-2 border mt-5 bg-white shadow rounded-2   " key={photo.src}>
+              <div id="" className="col-sm-3 h-50 px-2 border mt-2 bg-white shadow rounded-2   " key={photo.src}>
                 <div style={{ height: "300px" }} className='mt-4' id="card1">
                   <p
                     style={{ color: '#d90700' }}
