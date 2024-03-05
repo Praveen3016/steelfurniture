@@ -136,7 +136,7 @@ p {
 #sec2 button,
 #sec3 button {
   padding: 0.6rem 1rem;
-  background-color: black;
+  background-color: rgb(255, 111, 0);
   margin-top: 1.2rem;
   border-radius: 3px;
   color: white;
@@ -149,7 +149,7 @@ p {
 #sec1 .part1 button:hover,
 #sec2 button:hover,
 #sec3 button:hover {
-  background-color: rgb(255, 111, 0);
+  background-color: black;
 }
 
 #sec1 .part2 img {

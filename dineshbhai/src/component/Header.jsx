@@ -19,7 +19,7 @@ function Header() {
               <Nav.Link ><Link to="/privacypolicy" className='listt text-black' >Privacy Policy</Link></Nav.Link>
             </div>
             <div className='contact'>
-              <button><Link to='/contect' className="text-black">Contact us</Link></button>
+              <button><Link to='/contect' className="text-white">Contact us</Link></button>
             </div>
             
           </Nav>

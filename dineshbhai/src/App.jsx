@@ -123,7 +123,7 @@ function App() {
             onClick={handleViewToggle}
             style={{ padding: "8px 10px", fontSize: "13px" }}
           >
-            {showAll ? "Less" : "View More"}
+            {showAll ? " View Less" : "View More"}
           </button>
         </section>
   
@@ -266,7 +266,7 @@ function App() {
                         <MDBCol md="6">
                           <MDBInput
                             wrapperClass="mb-4"
-                            label="First Name"
+                            label="Full Name"
                             size="lg"
                             id="form1"
                             type="text"
