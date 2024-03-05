@@ -36,7 +36,7 @@ function Contact() {
   };
   
   return (
-    <div className="container-fluid ">
+    <div className="container-fluid backgraundcolor ">
       <div className="row col-sm-12 align-items-center  justify-content-center  ">
         <div style={{ marginTop: "100px" }} className="col-sm-6">
           <div>
