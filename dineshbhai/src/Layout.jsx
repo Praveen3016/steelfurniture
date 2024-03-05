@@ -56,19 +56,20 @@ function Layout() {
         ) : (
           ""
         )}
-        {showfrom ? (
+        {form ? (
           <div
             style={{ height: "100vh" }}
             className="row col-sm-12 align-items-center  position-fixed  justify-content-center"
           >
             <div className="   col-sm-7  ">
               <MDBCard>
-                <MDBCardBody>
-                  <div
+              <div
                     className="end-0 position-absolute  p-2 mx-3 "
-                    onClick={() => { setform(false); }}>
+                    onClick={() => { setform(false)}}>
                     <p>x</p>
                   </div>
+                <MDBCardBody>
+                
                   <form action="https://formspree.io/f/mbjnoddw" method="post">
                     <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
                     <MDBRow>
