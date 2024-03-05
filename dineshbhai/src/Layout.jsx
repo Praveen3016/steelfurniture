@@ -66,10 +66,7 @@ function Layout() {
                 <MDBCardBody>
                   <div
                     className="end-0 position-absolute  p-2 mx-3 "
-                    onClick={() => {
-                      setform(false);
-                    }}
-                  >
+                    onClick={() => { setform(false); }}>
                     <p>x</p>
                   </div>
                   <form action="https://formspree.io/f/mbjnoddw" method="post">

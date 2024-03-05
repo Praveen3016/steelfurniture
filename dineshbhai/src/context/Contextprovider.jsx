@@ -25,23 +25,22 @@ function Contextprovider({ children }) {
     { id: "13", src: 'https://imgres.tailbase.com/rzdimg/prods/800/682200_1.jpg', width: 4, height: 3, name: "Jewelry Software" },
   ];
 
-  const [show , setshow] = useState(false)
-  const [img , setimg] = useState("");
-const [form , setform]=useState(false);
-const [showfrom, setshow2] = useState("");
-  function imgshow(img){
+  const [show, setshow] = useState(false)
+  const [img, setimg] = useState("");
+  const [form, setform] = useState(false);
+  const [showfrom, setshow2] = useState("");
+  function imgshow(img) {
     setimg(img)
     setshow(true);
     console.log("hello")
 
   }
-  function formshow(name)
-  {
-      setshow2(name)
-      setform(true);
+  function formshow(name) {
+    setshow2(name)
+    setform(true);
   }
   return (
-    <Usercontext.Provider value={({ user, setuser ,photos ,setshow ,show ,img ,setimg , imgshow , setform, formshow , showfrom ,form})}>
+    <Usercontext.Provider value={({ user, setuser, photos, setshow, show, img, setimg, imgshow, setform, formshow, showfrom, form })}>
       {children}
     </Usercontext.Provider>
   )

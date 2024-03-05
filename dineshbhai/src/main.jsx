@@ -11,21 +11,21 @@ import Privacypolicy from './component/Privacypolicy.jsx';
 import Contextprovider from './context/Contextprovider.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout/>}>
-      <Route path="" element={<App/>} />
-      <Route path="product" element={<Products/>} />
-      <Route path="contect" element={<Contect/>} />
-      <Route path="about" element={<About/>} />
-      <Route path="privacypolicy" element={<Privacypolicy/>} />
+    <Route path="/" element={<Layout />}>
+      <Route path="" element={<App />} />
+      <Route path="product" element={<Products />} />
+      <Route path="contect" element={<Contect />} />
+      <Route path="about" element={<About />} />
+      <Route path="privacypolicy" element={<Privacypolicy />} />
     </Route>
   )
-  )
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Contextprovider> 
-     <RouterProvider router={router} />
-     </Contextprovider>
+    <Contextprovider>
+      <RouterProvider router={router} />
+    </Contextprovider>
 
   </React.StrictMode>,
 )

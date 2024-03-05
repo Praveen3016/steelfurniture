@@ -66,7 +66,7 @@ function App() {
     setSelectedDistrict(e.target.value);
   };
 
-  
+
   return (
     <>
       <div class="area">
@@ -91,7 +91,7 @@ function App() {
           <div className=" d-flex align-items-center part1  mt-5 ">
             <div className="d-flex flex-column w-sm-50 w-100 ps-1 ps-sm-5  ">
               <h1 className="heading mb-3 mt-2 fw-bold text-warning">
-              श्री KSF Furniture Factory
+                श्री KSF Furniture Factory
               </h1>
               <p className="text-white paragraph">
                 Kheteshwar Steel Furniture, Rajasthan's premier iron furniture
@@ -134,7 +134,7 @@ function App() {
             display: "flex",
             flexDirection: "row !important",
           }}
-          
+
         >
           <div className="container">
             <div className="row col-sm-12">
@@ -220,11 +220,11 @@ function App() {
           id="sec4"
         >
           <p
-                className="p1 mb-4 font-m fw-bold fs-4"
-                style={{ color: "#d90700" }}
-              >
-                CONTACT US
-              </p>
+            className="p1 mb-4 font-m fw-bold fs-4"
+            style={{ color: "#d90700" }}
+          >
+            CONTACT US
+          </p>
           <MDBContainer>
             <MDBRow className="justify-content-center align-items-center ">
               <div className="col-sm-5">
