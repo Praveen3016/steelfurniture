@@ -16,29 +16,29 @@ function Products() {
 
   return (
     <div className=" backgraundcolor ">
-
       <div className='container-fluid pt-5'>
-        <h2 className='text-center pt-5'  style={{ color: '#d90700' }}   >All Products</h2>
+        <h2 className='text-center pt-5 mt-2 mb-0'  style={{ color: '#d90700' }}   >All Products</h2>
         <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
           <div>
 
           </div >
-          <div className=' row col-sm-12 gap-4   d-flex align-items-center justify-content-center px-2 mb-4' s>
+          <div className='row col-sm-12 gap-4  d-flex align-items-center justify-content-center px-2 mb-4' s>
             {photos.map(photo =>
-              <div id="" className="col-sm-3 h-50 px-2 border mt-2 bg-white shadow rounded-2   " key={photo.src}>
-                <div style={{ height: "300px" }} className='mt-4' id="card1">
+              <div className="col-sm-2 h-50 p-0 border mt-2 bg-white rounded-1 shadow" key={photo.src}>
+                <div  className='mt-4' id="card1">
                   <p
                     style={{ color: '#d90700' }}
-                    className="d-flex  align-items-center justify-content-center fw-bold fs-6 "
+                    className="d-flex align-items-center justify-content-center fw-bold"
                   >
                     {photo.name}
                   </p>
+                  <div className="card-image-container mx-2">
                   <img style={{ height: "200px" }}
                     className="img-fluid  w-100  "
                     src={photo.src} onClick={() => { imgshow(photo.src) }}
                     alt=""
-                  />
-                  <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
+                  /></div>
+                  <button className='p-1 text-light mt-3 w-100 rounded-0' onClick={() => { formshow(photo.name) }} >Enquiry Now</button>
                 </div>
               </div>
             )}
