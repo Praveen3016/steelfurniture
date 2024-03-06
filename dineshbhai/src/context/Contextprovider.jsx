@@ -33,6 +33,7 @@ function Contextprovider({ children }) {
     setimg(img)
     setshow(true);
     console.log("hello")
+   
 
   }
   function formshow(name) {
