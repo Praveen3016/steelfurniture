@@ -11,7 +11,7 @@ import Card from "./component/Card";
 import stateDistrictsMap from ".././data.json";
 import Calllogo from "./component/Calllogo";
 import Whatsapp from "./component/Whatsapp";
-import ClientNumber from "./component/Clientnumber";
+import ClientNumber from "./component/clientnumber"
 import {
   MDBContainer,
   MDBRow,

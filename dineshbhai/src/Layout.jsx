@@ -49,7 +49,7 @@ function Layout() {
             onClick={() => setshow(false)}
           >
             <div
-              className=" bordered-opacity-50  d-flex justify-content-center h-100 align-items-center"
+              className=" bordered-opacity-50  d-flex justify-content-center h-100 align-items-center m-3"
             >
               <img className="img-fluid  rounded border-opacity-50" style={{height : "500px" , width : "700px" , border : "10px solid #00000047"}} src={img} alt=""   />
             </div>
