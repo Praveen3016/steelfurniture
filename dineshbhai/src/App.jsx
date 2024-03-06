@@ -168,53 +168,7 @@ function App() {
     
 
     </section>
-        <section>
-          {/* <div className="container-fluid">
-            <div className="row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4">
-              {firstFivePhotos.map((photo) => (
-                <div
-                  style={{ marginTop: "10px" }}
-                  className="card col-sm-2 p-0"
-                  key={photo.id}
-                >
-                  <div className="position-relative">
-                    <div className="image-container">
-                      <img
-                        style={{
-                          cursor: "pointer",
-                          minHeight: "290px",
-                          maxHeight: "300px",
-                          width: "100%",
-                        }}
-                        className="img-fluid img-hover"
-                        src={photo.src}
-                        alt=""
-                      />
-                    </div>
-                    <label
-                      style={{
-                        left: "0",
-                        bottom: "0px",
-                        color: "rgb(255, 111, 0)",
-                        cursor: "pointer",
-                      }}
-                      className="position-absolute lables bg-white w-100 p-3"
-                    >
-                      {photo.name}
-                    </label>
-                  </div>
-                  <button
-                    onClick={() => handleOrder(photo.name)}
-                    className=" mx-auto"
-                    style={{ width: "100%" }}
-                  >
-                    Inquiry Now
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div> */}
-        </section>
+        
         <section
           style={{
             display: "flex",
