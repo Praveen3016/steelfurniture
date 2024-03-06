@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "./component/Footer";
 import Header from "./component/Header";
 import { Outlet } from "react-router-dom";
 import { useContext } from "react";
 import Usercontext from "./context/usecontext";
 import stateDistrictsMap from "../data.json";
-import { useState } from "react";
-import { IoIosCloseCircle } from "react-icons/io";
+import Loader from './component/Loader'
 import {
   MDBRow,
   MDBCol,
@@ -15,10 +14,19 @@ import {
   MDBInput,
   MDBTextArea,
 } from "mdb-react-ui-kit";
+
 function Layout() {
   const [selectedState, setSelectedState] = useState("");
   const [selectedDistrict, setSelectedDistrict] = useState("");
   const [districts, setDistricts] = useState([]);
+  const [loading, setLoading] = useState(true); // State for managing loading state
+
+  useEffect(() => {
+    // Simulate data fetching delay
+    setTimeout(() => {
+      setLoading(false); // After 2 seconds, set loading to false to hide the loader
+    }, 2000);
+  }, []);
 
   const handleStateChange = (e) => {
     const state = e.target.value;
@@ -34,24 +42,28 @@ function Layout() {
     setSelectedDistrict(e.target.value);
   };
 
-  const { setshow, show, img, showfrom, setform, form ,setshow2 } =
+  const { setshow, show, img, showfrom, setform, form } =
     useContext(Usercontext);
 
   return (
     <>
-      <>
-        {show ? (
-          <div
-            className="w-100 h-100 position-absolute position-fixed  bg-black bg-opacity-50 "
-            style={{ zIndex: "9999999" }}
-            onClick={() => setshow(false)}
-          >
+      {loading ? ( // Conditionally render the Loader component
+        <Loader />
+      ) : (
+        <>
+          {show ? (
             <div
-              className=" bordered-opacity-50  d-flex justify-content-center h-100 align-items-center m-3"
+              className="w-100 h-100 position-absolute position-fixed  bg-black bg-opacity-50 "
+              style={{ zIndex: "9999999" }}
+              onClick={() => setshow(false)}
             >
-              <img className="img-fluid  rounded border-opacity-50" style={{height : "500px" , width : "700px" , border : "10px solid #00000047"}} src={img} alt=""   />
+              <div
+                className="position-absolute bordered-3 bordered-opacity-50 align-items-center justify-content-center  "
+                style={{ top: "100px", left: "350px" }}
+              >
+                <img src={img} alt="" height={500} className="rounded" />
+              </div>
             </div>
-<<<<<<< HEAD
           ) : (
             ""
           )}
@@ -128,107 +140,25 @@ function Layout() {
                           >
                             <option value="" disabled hidden>
                               Select a State
-=======
-          </div>
-        ) : (
-          ""
-        )}
-        {form ? (
-          <div
-            style={{ height: "100vh" , zIndex: "9999999"}}
-            className="row col-sm-12 align-items-center bg-black bg-opacity-50  position-fixed  justify-content-center"
-          >
-            <div style={{marginTop:"90px" }} className="   col-sm-7  ">
-              <MDBCard>
-              <div    
-                    style={{cursor : "pointer"}}
-                    className="end-0 position-absolute fs-3 p-2 mx-3 "
-                    onClick={() => { setform(false)}}>
-                  < IoIosCloseCircle/>
-                  </div>
-                <MDBCardBody>
-                
-                  <form action="https://formspree.io/f/mbjnoddw" method="post">
-                    <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
-                    <MDBRow>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="First Name"
-                          size="lg"
-                          id="form1"
-                          type="text"
-                          name="First Name"
-                        />
-                      </MDBCol>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="Last Name"
-                          size="lg"
-                          id="form1"
-                          type="text"
-                          name="Last Name"
-                        />
-                      </MDBCol>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="Email"
-                          size="lg"
-                          id="form1"
-                          type="text"
-                          name="Email"
-                        />
-                      </MDBCol>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="Phone number"
-                          size="lg"
-                          id="form2"
-                          type="text"
-                          name="Phone number"
-                        />
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow className="mb-3">
-                      <MDBCol md={6}>
-                        {/* <label>Select a State:</label> */}
-                        <select
-                          className="form-select"
-                          value={selectedState}
-                          name="State"
-                          onChange={handleStateChange}
-                        >
-                          <option value="" disabled hidden>
-                            Select a State
-                          </option>
-                          <option value="">-- Select --</option>
-                          {stateDistrictsMap.states.map((stateData, index) => (
-                            <option key={index} value={stateData.state}>
-                              {stateData.state}
->>>>>>> 6b0e7e40f9a82e07862acd5d3fcf3893b5ba8543
                             </option>
-                          ))}
-                        </select>
-                      </MDBCol>
-                      <MDBCol md={6}>
-                        <select
-                          className="form-select"
-                          value={selectedDistrict}
-                          onChange={handleDistrictChange}
-                          name="District"
-                        >
-                          <option value="" disabled hidden>
-                            Select a District
-                          </option>
-                          <option value="">-- Select --</option>
-                          {districts.map((district, index) => (
-                            <option key={index} value={district}>
-                              {district}
+                            <option value="">-- Select --</option>
+                            {stateDistrictsMap.states.map((stateData, index) => (
+                              <option key={index} value={stateData.state}>
+                                {stateData.state}
+                              </option>
+                            ))}
+                          </select>
+                        </MDBCol>
+                        <MDBCol md={6}>
+                          <select
+                            className="form-select"
+                            value={selectedDistrict}
+                            onChange={handleDistrictChange}
+                            name="District"
+                          >
+                            <option value="" disabled hidden>
+                              Select a District
                             </option>
-<<<<<<< HEAD
                             <option value="">-- Select --</option>
                             {districts.map((district, index) => (
                               <option key={index} value={district}>
@@ -267,51 +197,16 @@ function Layout() {
                   </MDBCardBody>
                 </MDBCard>
               </div>
-=======
-                          ))}
-                        </select>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol md="12">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="address"
-                          size="lg"
-                          id="form3"
-                          type="text"
-                          name="Address"
-                        />
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol md="12">
-                        <MDBTextArea
-                          label="Message"
-                          id="validationTextarea"
-                          required
-                          value={showfrom}
-                          onChange={(e) => setshow2(e.target.value)}
-                        />
-                      </MDBCol>
-                    </MDBRow>
-                    <button className="mt-4" size="lg">
-                      Submit
-                    </button>
-                  </form>
-                </MDBCardBody>
-              </MDBCard>
->>>>>>> 6b0e7e40f9a82e07862acd5d3fcf3893b5ba8543
             </div>
-          </div>
-        ) : (
-          ""
-        )}
+          ) : (
+            ""
+          )}
 
-        <Header />
-        <Outlet />
-        <Footer />
-      </>
+          <Header />
+          <Outlet />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

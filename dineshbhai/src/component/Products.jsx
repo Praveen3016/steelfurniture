@@ -50,7 +50,6 @@ function Products() {
                   >
                     {photo.name}
                   </p>
-<<<<<<< HEAD
                   <div className="card-image-container mx-2">
                   <img style={{ height: "200px" }}
                     className="img-fluid  w-100  "
@@ -58,9 +57,6 @@ function Products() {
                     alt=""
                   /></div>
                   <button className='p-1 text-light mt-3 w-100 rounded-0' onClick={() => { formshow(photo.name) }} >Enquiry Now</button>
-=======
-                  <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
->>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
                 </div>
               </div>
               </div> */}
