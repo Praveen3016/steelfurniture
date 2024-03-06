@@ -25,7 +25,7 @@ function Layout() {
     // Simulate data fetching delay
     setTimeout(() => {
       setLoading(false); // After 2 seconds, set loading to false to hide the loader
-    }, 2000);
+    }, 3000);
   }, []);
 
   const handleStateChange = (e) => {
