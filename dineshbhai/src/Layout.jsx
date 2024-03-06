@@ -6,6 +6,8 @@ import { useContext } from "react";
 import Usercontext from "./context/usecontext";
 import stateDistrictsMap from "../data.json";
 import Loader from './component/Loader'
+import { TiDelete } from "react-icons/ti";
+
 import {
   MDBRow,
   MDBCol,
@@ -58,10 +60,10 @@ function Layout() {
               onClick={() => setshow(false)}
             >
               <div
-                className="position-absolute bordered-3 bordered-opacity-50 align-items-center justify-content-center  "
+                className="d-flex align-items-center h-100 w-100 justify-content-center  "
                 style={{ top: "100px", left: "350px" }}
               >
-                <img src={img} alt="" height={500} className="rounded" />
+                <img src={img} alt="" style={{height : "500px" , width : " 750px" , border : "10px solid #0000007a"}} className="rounded" />
               </div>
             </div>
           ) : (
@@ -69,8 +71,8 @@ function Layout() {
           )}
           {form ? (
             <div
-              style={{ height: "100vh" }}
-              className="row col-sm-12 align-items-center  position-fixed  justify-content-center"
+              style={{ height: "100vh" , zIndex: "9999999" }}
+              className="row col-sm-12 align-items-center  position-fixed bg-black bg-opacity-50  justify-content-center"
             >
               <div className="   col-sm-7  ">
                 <MDBCard>
@@ -80,8 +82,8 @@ function Layout() {
                       setform(false);
                     }}
                   >
-                    <p>x</p>
-                  </div>
+<TiDelete style={{height : " 30px "}}/>              
+    </div>
                   <MDBCardBody>
                     <form
                       action="https://formspree.io/f/mbjnoddw"
