@@ -6,9 +6,6 @@ import { useContext } from "react";
 import Usercontext from "./context/usecontext";
 import stateDistrictsMap from "../data.json";
 import Loader from "./component/Loader";
-import { useState } from "react";
-import { IoIosCloseCircle } from "react-icons/io";
-
 import {
   MDBRow,
   MDBCol,
@@ -22,12 +19,13 @@ function Layout() {
   const [selectedState, setSelectedState] = useState("");
   const [selectedDistrict, setSelectedDistrict] = useState("");
   const [districts, setDistricts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // State for managing loading state
 
   useEffect(() => {
+    // Simulate data fetching delay
     setTimeout(() => {
-      setLoading(false); 
-    }, 3000);
+      setLoading(false); // After 2 seconds, set loading to false to hide the loader
+    }, 2000);
   }, []);
 
   const handleStateChange = (e) => {
@@ -83,26 +81,6 @@ function Layout() {
                     }}
                   >
                     <p>x</p>
-              className="position-absolute bordered-opacity-50 align-items-center justify-content-center  "
-              style={{ top:"15%", right:"20%", left:"15%"  }}
-            >
-              <img className="img-fluid " src={img} alt=""   />
-            </div>
-          </div>
-        ) : (
-          ""
-        )}
-        {form ? (
-          <div
-            style={{ height: "100vh" }}
-            className="row col-sm-12 align-items-center  position-fixed  justify-content-center"
-          >
-            <div style={{marginTop:"90px"}} className="   col-sm-7  ">
-              <MDBCard>
-              <div
-                    className="end-0 position-absolute fs-3 p-2 mx-3 "
-                    onClick={() => { setform(false)}}>
-                  < IoIosCloseCircle/>
                   </div>
                   <MDBCardBody>
                     <form

@@ -801,15 +801,3 @@ p.awesome_line {
 }
 
 
-    content: attr(data-value);
-    position: absolute;
-    top: -5px;
-    right: 0;
-    font-size: 10px;
-    font-weight:600;    
-    color: #fff;
-    background:rgba(0, 0, 0, 0.9);
-    padding: 3px 7px;
-    border-radius: 30px;
-}
-
