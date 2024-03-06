@@ -59,10 +59,10 @@ function Layout() {
         )}
         {form ? (
           <div
-            style={{ height: "100vh" }}
-            className="row col-sm-12 align-items-center  position-fixed  justify-content-center"
+            style={{ height: "100vh" , zIndex: "9999999"}}
+            className="row col-sm-12 align-items-center bg-black bg-opacity-50  position-fixed  justify-content-center"
           >
-            <div style={{marginTop:"90px"}} className="   col-sm-7  ">
+            <div style={{marginTop:"90px" }} className="   col-sm-7  ">
               <MDBCard>
               <div    
                     style={{cursor : "pointer"}}
