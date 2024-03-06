@@ -63,14 +63,20 @@ function Layout() {
             className="row col-sm-12 align-items-center bg-black bg-opacity-50  position-fixed  justify-content-center"
           >
             <div style={{marginTop:"90px" }} className="   col-sm-7  ">
-              <MDBCard>
+              <MDBCard >
+             
+<div className="d-flex justify-content-between">
+<h4 className="px-3 pt-3
+              ">Contect Now</h4>
               <div    
                     style={{cursor : "pointer"}}
                     className="end-0 position-absolute fs-3 p-2 mx-3 "
                     onClick={() => { setform(false)}}>
+
                   < IoIosCloseCircle/>
                   </div>
-                <MDBCardBody>
+                  </div>
+                <MDBCardBody className="p-0 px-3" >
                 
                   <form action="https://formspree.io/f/mbjnoddw" method="post">
                     <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
@@ -178,7 +184,7 @@ function Layout() {
                         />
                       </MDBCol>
                     </MDBRow>
-                    <button className="mt-4" size="lg">
+                    <button className="mt-4 text-white py-1 mb-2" size="lg">
                       Submit
                     </button>
                   </form>
