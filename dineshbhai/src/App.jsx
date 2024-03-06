@@ -11,7 +11,7 @@ import Card from "./component/Card";
 import stateDistrictsMap from ".././data.json";
 import Calllogo from "./component/Calllogo";
 import Whatsapp from "./component/Whatsapp";
-import ClientNumber from "./component/clientnumber"
+import ClientNumber from './component/Clientnumber'
 import {
   MDBContainer,
   MDBRow,
@@ -149,7 +149,7 @@ function App() {
               </div>
               <div className="col-sm-6 d-flex align-items-center ">
                 <div>
-                  <h2>Welcome to KSF Steel Factory</h2>
+                  <h2>Welcome to श्री KSF Steel Factory</h2>
                   <p id="sec3p3">
                     We seamlessly merge three key components – Website, Mobile
                     Application, and Software technology. This is the main
