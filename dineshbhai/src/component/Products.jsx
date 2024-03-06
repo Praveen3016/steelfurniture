@@ -30,12 +30,6 @@ function Products() {
           <div>
 
           </div >
-<<<<<<< HEAD
-          <div className='row col-sm-12 gap-4  d-flex align-items-center justify-content-center px-2 mb-4' s>
-            {photos.map(photo =>
-              <div className="col-sm-2 h-50 p-0 border mt-2 bg-white rounded-1 shadow" key={photo.src}>
-                <div  className='mt-4' id="card1">
-=======
           <div className=' row col-sm-11    d-flex align-items-center justify-content-center px-2 mb-4' s>
             {photos.map(photo =>
             <>
@@ -48,24 +42,13 @@ function Products() {
                     src={photo.src} onClick={() => { imgshow(photo.src) }}
                     alt=""
                   />
->>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
                   <p
                     style={{ color: '#d90700' }}
                     className="d-flex align-items-center justify-content-center fw-bold"
                   >
                     {photo.name}
                   </p>
-<<<<<<< HEAD
-                  <div className="card-image-container mx-2">
-                  <img style={{ height: "200px" }}
-                    className="img-fluid  w-100  "
-                    src={photo.src} onClick={() => { imgshow(photo.src) }}
-                    alt=""
-                  /></div>
-                  <button className='p-1 text-light mt-3 w-100 rounded-0' onClick={() => { formshow(photo.name) }} >Enquiry Now</button>
-=======
                   <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
->>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
                 </div>
               </div>
               </div> */}

@@ -63,7 +63,6 @@ function Layout() {
                 <img src={img} alt="" height={500} className="rounded" />
               </div>
             </div>
-<<<<<<< HEAD
           ) : (
             ""
           )}
@@ -140,93 +139,6 @@ function Layout() {
                           >
                             <option value="" disabled hidden>
                               Select a State
-=======
-          </div>
-        ) : (
-          ""
-        )}
-        {form ? (
-          <div
-            style={{ height: "100vh" , zIndex: "9999999"}}
-            className="row col-sm-12 align-items-center bg-black bg-opacity-50  position-fixed  justify-content-center"
-          >
-            <div style={{marginTop:"90px" }} className="   col-sm-7  ">
-              <MDBCard >
-             
-<div className="d-flex justify-content-between">
-<h4 className="px-3 pt-3
-              ">Contect Now</h4>
-              <div    
-                    style={{cursor : "pointer"}}
-                    className="end-0 position-absolute fs-3 p-2 mx-3 "
-                    onClick={() => { setform(false)}}>
-
-                  < IoIosCloseCircle/>
-                  </div>
-                  </div>
-                <MDBCardBody className="p-0 px-3" >
-                
-                  <form action="https://formspree.io/f/mbjnoddw" method="post">
-                    <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
-                    <MDBRow>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="First Name"
-                          size="lg"
-                          id="form1"
-                          type="text"
-                          name="First Name"
-                        />
-                      </MDBCol>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="Last Name"
-                          size="lg"
-                          id="form1"
-                          type="text"
-                          name="Last Name"
-                        />
-                      </MDBCol>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="Email"
-                          size="lg"
-                          id="form1"
-                          type="text"
-                          name="Email"
-                        />
-                      </MDBCol>
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="Phone number"
-                          size="lg"
-                          id="form2"
-                          type="text"
-                          name="Phone number"
-                        />
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow className="mb-3">
-                      <MDBCol md={6}>
-                        {/* <label>Select a State:</label> */}
-                        <select
-                          className="form-select"
-                          value={selectedState}
-                          name="State"
-                          onChange={handleStateChange}
-                        >
-                          <option value="" disabled hidden>
-                            Select a State
-                          </option>
-                          <option value="">-- Select --</option>
-                          {stateDistrictsMap.states.map((stateData, index) => (
-                            <option key={index} value={stateData.state}>
-                              {stateData.state}
->>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
                             </option>
                             <option value="">-- Select --</option>
                             {stateDistrictsMap.states.map((stateData, index) => (
@@ -246,7 +158,6 @@ function Layout() {
                             <option value="" disabled hidden>
                               Select a District
                             </option>
-<<<<<<< HEAD
                             <option value="">-- Select --</option>
                             {districts.map((district, index) => (
                               <option key={index} value={district}>
@@ -285,41 +196,6 @@ function Layout() {
                   </MDBCardBody>
                 </MDBCard>
               </div>
-=======
-                          ))}
-                        </select>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol md="12">
-                        <MDBInput
-                          wrapperClass="mb-4"
-                          label="address"
-                          size="lg"
-                          id="form3"
-                          type="text"
-                          name="Address"
-                        />
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol md="12">
-                        <MDBTextArea
-                          label="Message"
-                          id="validationTextarea"
-                          required
-                          value={showfrom}
-                          onChange={(e) => setshow2(e.target.value)}
-                        />
-                      </MDBCol>
-                    </MDBRow>
-                    <button className="mt-4 text-white py-1 mb-2" size="lg">
-                      Submit
-                    </button>
-                  </form>
-                </MDBCardBody>
-              </MDBCard>
->>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
             </div>
           ) : (
             ""
