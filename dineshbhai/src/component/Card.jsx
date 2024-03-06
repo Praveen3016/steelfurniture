@@ -8,11 +8,16 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 
+import { useContext } from "react";
+import Usercontext from "../context/usecontext";
+
 export default function Card({ props }) {
+  const { formshow } = useContext(Usercontext);
+
   return (
     <>
       {props.map((value, index) => (
-        <div id="" className="col-sm-3  px-2 my-2" key={index}>
+        <div id="" className="col-sm-3  px-2 my-2" key={index} onClick={() => { formshow(value.cardTitle) }}>
           <MDBCard className="card-container">
             <div className="img-container">
               <MDBCardImage
