@@ -508,12 +508,6 @@ p {
   background-size: cover;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {}
 
 a,
 a:hover,
@@ -798,4 +792,13 @@ p.awesome_line {
   background: rgba(0, 0, 0, 0.9);
   padding: 3px 7px;
   border-radius: 30px;
+}
+.card-image-container{
+  overflow: hidden;
+}
+.card-image-container img{
+  transition: .2s ease-in-out;
+}
+.card-image-container:hover img{
+  scale: 1.1;
 }
