@@ -40,7 +40,7 @@ function Contextprovider({ children }) {
     setform(true);
   }
   return (
-    <Usercontext.Provider value={({ user, setuser, photos, setshow, show, img, setimg, imgshow, setform, formshow, showfrom, form })}>
+    <Usercontext.Provider value={({ user, setuser, photos, setshow, show, img, setimg, imgshow, setform, formshow, showfrom, form ,setshow2 })}>
       {children}
     </Usercontext.Provider>
   )

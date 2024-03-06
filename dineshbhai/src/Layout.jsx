@@ -36,7 +36,7 @@ function Layout() {
     setSelectedDistrict(e.target.value);
   };
 
-  const { setshow, show, img, showfrom, setform, form } =
+  const { setshow, show, img, showfrom, setform, form ,setshow2 } =
     useContext(Usercontext);
 
   return (
@@ -49,10 +49,9 @@ function Layout() {
             onClick={() => setshow(false)}
           >
             <div
-              className="position-absolute bordered-opacity-50 align-items-center justify-content-center  "
-              style={{ top:"15%", right:"20%", left:"15%"  }}
+              className=" bordered-opacity-50  d-flex justify-content-center h-100 align-items-center"
             >
-              <img className="img-fluid " src={img} alt=""   />
+              <img className="img-fluid  rounded border-opacity-50" style={{height : "500px" , width : "700px" , border : "10px solid #00000047"}} src={img} alt=""   />
             </div>
           </div>
         ) : (
@@ -65,7 +64,8 @@ function Layout() {
           >
             <div style={{marginTop:"90px"}} className="   col-sm-7  ">
               <MDBCard>
-              <div
+              <div    
+                    style={{cursor : "pointer"}}
                     className="end-0 position-absolute fs-3 p-2 mx-3 "
                     onClick={() => { setform(false)}}>
                   < IoIosCloseCircle/>
@@ -174,6 +174,7 @@ function Layout() {
                           id="validationTextarea"
                           required
                           value={showfrom}
+                          onChange={(e) => setshow2(e.target.value)}
                         />
                       </MDBCol>
                     </MDBRow>
