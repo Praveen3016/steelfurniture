@@ -6,6 +6,9 @@ import { useContext } from "react";
 import Usercontext from "./context/usecontext";
 import stateDistrictsMap from "../data.json";
 import Loader from "./component/Loader";
+import { useState } from "react";
+import { IoIosCloseCircle } from "react-icons/io";
+
 import {
   MDBRow,
   MDBCol,
@@ -80,6 +83,26 @@ function Layout() {
                     }}
                   >
                     <p>x</p>
+              className="position-absolute bordered-opacity-50 align-items-center justify-content-center  "
+              style={{ top:"15%", right:"20%", left:"15%"  }}
+            >
+              <img className="img-fluid " src={img} alt=""   />
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+        {form ? (
+          <div
+            style={{ height: "100vh" }}
+            className="row col-sm-12 align-items-center  position-fixed  justify-content-center"
+          >
+            <div style={{marginTop:"90px"}} className="   col-sm-7  ">
+              <MDBCard>
+              <div
+                    className="end-0 position-absolute fs-3 p-2 mx-3 "
+                    onClick={() => { setform(false)}}>
+                  < IoIosCloseCircle/>
                   </div>
                   <MDBCardBody>
                     <form

@@ -11,8 +11,7 @@ import Card from "./component/Card";
 import stateDistrictsMap from ".././data.json";
 import Calllogo from "./component/Calllogo";
 import Whatsapp from "./component/Whatsapp";
-import Clientnumber from "./component/Clientnumber";
-
+import ClientNumber from "./component/clientnumber";
 import {
   MDBContainer,
   MDBRow,
@@ -126,7 +125,7 @@ function App() {
             {showAll ? " View Less" : "View More"}
           </button>
         </section>
-        <Clientnumber/>
+        <ClientNumber/>
         <section
           id="sec3"
           style={{
