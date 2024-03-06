@@ -168,7 +168,6 @@ function App() {
     
 
     </section>
-        
         <section
           style={{
             display: "flex",
