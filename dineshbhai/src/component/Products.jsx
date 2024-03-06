@@ -63,6 +63,7 @@ function Products() {
       alt="Image"
       style={{height : "200px"}}
       className="card-img"
+      onClick={() => { imgshow(photo.src) }}
     />
   </div>
   <MDBCardBody className='p-0 px-3 pt-2 ' style={{height : '80px'}}>
