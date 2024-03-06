@@ -24,8 +24,9 @@ function Products() {
 
   return (
     <div className=" backgraundcolor ">
+
       <div className='container-fluid pt-5'>
-        <h2 className='text-center pt-5 mt-2 mb-0'  style={{ color: '#d90700' }}   >All Products</h2>
+        <h2 className='text-center pt-5'  style={{ color: '#d90700' }}   >All Products</h2>
         <div className='row col-sm-12 gap-4 d-flex align-items-center justify-content-center px-2 mb-4'>
           <div>
 
@@ -42,13 +43,24 @@ function Products() {
                     src={photo.src} onClick={() => { imgshow(photo.src) }}
                     alt=""
                   />
+>>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
                   <p
                     style={{ color: '#d90700' }}
                     className="d-flex align-items-center justify-content-center fw-bold"
                   >
                     {photo.name}
                   </p>
+<<<<<<< HEAD
+                  <div className="card-image-container mx-2">
+                  <img style={{ height: "200px" }}
+                    className="img-fluid  w-100  "
+                    src={photo.src} onClick={() => { imgshow(photo.src) }}
+                    alt=""
+                  /></div>
+                  <button className='p-1 text-light mt-3 w-100 rounded-0' onClick={() => { formshow(photo.name) }} >Enquiry Now</button>
+=======
                   <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
+>>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
                 </div>
               </div>
               </div> */}
@@ -62,7 +74,6 @@ function Products() {
       alt="Image"
       style={{height : "200px"}}
       className="card-img"
-      onClick={() => { imgshow(photo.src) }}
     />
   </div>
   <MDBCardBody className='p-0 px-3 pt-2 ' style={{height : '80px'}}>
@@ -72,7 +83,6 @@ function Products() {
     <div className='w-100 d-flex justify-content-center'>
     <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
     </div>
-    {/* <MDBCardText className="card-desc">{value.title}</MDBCardText> */}
   </MDBCardBody>
 </MDBCard>
 </div>
