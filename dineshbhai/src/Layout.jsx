@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import { useContext } from "react";
 import Usercontext from "./context/usecontext";
 import stateDistrictsMap from "../data.json";
-import Loader from './component/Loader'
+import Loader from "./component/Loader";
 import { TiDelete } from "react-icons/ti";
 
 import {
@@ -24,9 +24,8 @@ function Layout() {
   const [loading, setLoading] = useState(true); // State for managing loading state
 
   useEffect(() => {
-    
     setTimeout(() => {
-      setLoading(false); 
+      setLoading(false);
     }, 3000);
   }, []);
 
@@ -49,7 +48,7 @@ function Layout() {
 
   return (
     <>
-      {loading ? ( 
+      {loading ? (
         <Loader />
       ) : (
         <>
@@ -63,7 +62,16 @@ function Layout() {
                 className="d-flex align-items-center h-100 w-100 justify-content-center  "
                 style={{ top: "100px", left: "350px" }}
               >
-                <img src={img} alt="" style={{height : "500px" , width : " 750px" , border : "10px solid #0000007a"}} className="rounded" />
+                <img
+                  src={img}
+                  alt=""
+                  style={{
+                    height: "500px",
+                    width: " 750px",
+                    border: "10px solid #0000007a",
+                  }}
+                  className="rounded"
+                />
               </div>
             </div>
           ) : (
@@ -71,7 +79,7 @@ function Layout() {
           )}
           {form ? (
             <div
-              style={{ height: "100vh" , zIndex: "9999999" }}
+              style={{ height: "100vh", zIndex: "9999999" }}
               className="row col-sm-12 align-items-center  position-fixed bg-black bg-opacity-50  justify-content-center"
             >
               <div className="   col-sm-7  ">
@@ -82,8 +90,8 @@ function Layout() {
                       setform(false);
                     }}
                   >
-<TiDelete style={{height : " 30px "}}/>              
-    </div>
+                    <TiDelete className="fs-3"/>
+                  </div>
                   <MDBCardBody>
                     <form
                       action="https://formspree.io/f/mbjnoddw"
@@ -144,11 +152,13 @@ function Layout() {
                               Select a State
                             </option>
                             <option value="">-- Select --</option>
-                            {stateDistrictsMap.states.map((stateData, index) => (
-                              <option key={index} value={stateData.state}>
-                                {stateData.state}
-                              </option>
-                            ))}
+                            {stateDistrictsMap.states.map(
+                              (stateData, index) => (
+                                <option key={index} value={stateData.state}>
+                                  {stateData.state}
+                                </option>
+                              )
+                            )}
                           </select>
                         </MDBCol>
                         <MDBCol md={6}>
