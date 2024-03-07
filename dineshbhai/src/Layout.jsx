@@ -24,10 +24,10 @@ function Layout() {
   const [loading, setLoading] = useState(true); // State for managing loading state
 
   useEffect(() => {
-    // Simulate data fetching delay
+    
     setTimeout(() => {
-      setLoading(false); // After 2 seconds, set loading to false to hide the loader
-    }, 2000);
+      setLoading(false); 
+    }, 3000);
   }, []);
 
   const handleStateChange = (e) => {
@@ -49,7 +49,7 @@ function Layout() {
 
   return (
     <>
-      {loading ? ( // Conditionally render the Loader component
+      {loading ? ( 
         <Loader />
       ) : (
         <>
