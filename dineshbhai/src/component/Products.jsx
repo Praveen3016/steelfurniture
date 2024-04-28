@@ -4,14 +4,6 @@ import Whatsapp from './Whatsapp'
 import Calllogo from './Calllogo'
 import ScrollToTopButton from './ScrollToTopButton'
 import Usercontext from '../context/usecontext';
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-  MDBBtn,
-} from "mdb-react-ui-kit";
 function Products() {
   const [data, setdata] = useState(false);
   const [selectedPhotoName, setSelectedPhotoName] = useState("");
@@ -31,59 +23,28 @@ function Products() {
           <div>
 
           </div >
-          <div className=' row col-sm-11    d-flex align-items-center justify-content-center px-2 mb-4' s>
+          <div className=' row col-sm-12 gap-4   d-flex align-items-center justify-content-center px-2 mb-4' s>
             {photos.map(photo =>
-            <>
-              {/* <div id="" className="col-sm-3    " key={photo.src}>
-                <div className='h-50  border mt-2 bg-white shadow rounded-2'>
-                <div style={{ height: "300px" }} className='m-2' id="card1">
-                  
+              <div id="" className="col-sm-3 h-50 px-2 border mt-2 bg-white shadow rounded-2 border    " key={photo.src}>
+                <div style={{ height: "300px" }} className='mt-4' id="card1">
+                  <p
+                    style={{ color: '#d90700' }}
+                    className="d-flex  align-items-center justify-content-center fw-bold fs-6 "
+                  >
+                    {photo.name}
+                  </p>
                   <img style={{ height: "200px" }}
                     className="img-fluid  w-100  "
                     src={photo.src} onClick={() => { imgshow(photo.src) }}
                     alt=""
                   />
->>>>>>> f19733d7b53b1e6fd6d86379b2f255189c5caeac
-                  <p
-                    style={{ color: '#d90700' }}
-                    className="d-flex align-items-center justify-content-center fw-bold"
-                  >
-                    {photo.name}
-                  </p>
-                  <div className="card-image-container mx-2">
-                  <img style={{ height: "200px" }}
-                    className="img-fluid  w-100  "
-                    src={photo.src} onClick={() => { imgshow(photo.src) }}
-                    alt=""
-                  /></div>
-                  <button className='p-1 text-light mt-3 w-100 rounded-0' onClick={() => { formshow(photo.name) }} >Enquiry Now</button>
+                  <div className="justify-content-between d-flex  " >
+                  <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
+                  <button  className=' p-1 text-light mt-3 buttonbackgraund '>contact</button>
+                  </div>
+               
                 </div>
               </div>
-              </div> */}
-
-<div id="" className="col-sm-3  px-2 my-2 " key={photo.src}>
-<MDBCard className="card-container shadow">
-  <div className="img-container">
-    <MDBCardImage
-      src={photo.src}
-      position="top"
-      alt="Image"
-      style={{height : "200px"}}
-      className="card-img"
-      onClick={() => { imgshow(photo.src) }}
-    />
-  </div>
-  <MDBCardBody className='p-0 px-3 pt-2 ' style={{height : '80px'}}>
-    <MDBCardTitle className="card-title fw-bold" style={{color:'#d90700'}}>
-      {photo.name}
-    </MDBCardTitle>
-    <div className='w-100 d-flex justify-content-center'>
-    <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
-    </div>
-  </MDBCardBody>
-</MDBCard>
-</div>
-</>
             )}
           </div>
         </div>
