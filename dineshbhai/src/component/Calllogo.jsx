@@ -1,11 +1,10 @@
 import React from 'react'
-import call from '../../public/image/call.png'
 const Calllogo = () => {
   return (
     <div className="image-container">
     <a href="tel:+9967745712">
       <img
-        src={call}
+        src="public\R.png"
         alt=""
         style={{
           width: "50px",

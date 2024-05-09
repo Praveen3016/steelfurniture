@@ -36,8 +36,8 @@ function Contact() {
   };
 
   return (
-    <div className="container-fluid backgraundcolor ">
-      <div className="row col-sm-12 align-items-center  justify-content-center  ">
+    <div className="container-fluid backgraundcolor  ">
+      <div className="row col-sm-12 align-items-center  justify-content-center   ">
         <div style={{ marginTop: "100px" }} className="col-sm-6">
           <div>
             <div className="row col-sm-12">
@@ -84,7 +84,7 @@ function Contact() {
             </div>
           </div>
           <div className="  col-sm-12 ">
-            <MDBCard>
+            <MDBCard className="transparent-form" >
               <MDBCardBody>
                 <form action="https://formspree.io/f/mbjnoddw" method="post">
                   <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>

@@ -1,11 +1,11 @@
 import React from 'react'
-import whatsapplogo from '../../public/image/whatsapp.png'
+
 const Whatsapp = () => {
   return (
     <div className="image-container">
     <a href="https://wa.me/+919967745712">
       <img
-        src={whatsapplogo}
+        src="public\R.png"
         alt=""
         style={{
           width: "50px",

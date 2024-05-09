@@ -12,6 +12,8 @@ import stateDistrictsMap from ".././data.json";
 import Calllogo from "./component/Calllogo";
 import Whatsapp from "./component/Whatsapp";
 import ClientNumber from "./component/clientnumber";
+import { Link } from "react-router-dom";
+import { IoCall } from "react-icons/io5";
 import {
   MDBContainer,
   MDBRow,
@@ -25,7 +27,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const { photos } = useContext(Usercontext);
-  const firstFivePhotos = photos.slice(0, 5);
+  const firstFivePhotos = photos.slice(0, 3);
 
   const [gradientColor, setGradientColor] = useState("#ff0000"); // Initial color
 
@@ -102,7 +104,7 @@ function App() {
                 almirahs and office furnishings. Experience excellence with
                 Kheteshwar Steel Furniture.
               </p>
-              <button>Contact Us</button>
+              <button><Link to='/contect' className="text-white">Contact us</Link></button>
             </div>
           </div>
         </section>
@@ -125,7 +127,7 @@ function App() {
             {showAll ? " View Less" : "View More"}
           </button>
         </section>
-        <ClientNumber/>
+        <ClientNumber />
         <section
           id="sec3"
           style={{
@@ -145,7 +147,7 @@ function App() {
                 ABOUT US
               </p>
               <div className=" col-sm-6">
-                <img src="public\image\OIP.jpg" className="img-fluid" alt="" />
+                <img src="public\image\tk2.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-sm-6 d-flex align-items-center ">
                 <div>
@@ -157,7 +159,7 @@ function App() {
                     to deliver a specialist in our services.
                   </p>
                   <div>
-                    <button>View More</button>
+                    <button className="btn p-2"  ><Link to="/about" className="text-white" >Veiw More</Link></button>
                   </div>
                 </div>
               </div>
@@ -165,9 +167,51 @@ function App() {
           </div>
         </section>
         <section>
-    
+          <section>
+            <p
+              className="p1 mb-4 font-m fw-bold text-center  fs-4"
+              style={{ color: "#d90700" }}
+            >
+              PRODUCT
+            </p>
+            <div className=' row col-sm-12 gap-4   d-flex align-items-center justify-content-center px-2 mb-4' s>
+            {firstFivePhotos.map(photo =>
+              <div id="" className="col-sm-3 col-10 h-50 px-1" key={photo.id}>
+                <div style={{ height: "350px" }} className='mt-4' id="card1">
+                  <p
+                    style={{ color: '#d90700' }}
+                    className="d-flex  align-items-center justify-content-center fw-bold fs-6 "
+                  >
+                    {photo.name}
+                  </p>
+                  <img style={{ height: "200px" }}
+                    className="img-fluid  w-100  "
+                    src={photo.src} onClick={() => { imgshow(photo.src) }}
+                    alt=""
+                  />
+                  <div className="border-bottom mt-2  " >
+                    <p className="flex-wrap" >{photo.p} <label style={{ color: '#d90700' }} className='mx-2' >{photo.price} </label> </p>
+                  </div>
+                  <div className="justify-content-between d-flex  " >
+                    <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > Inquriy now </button>
+                    <button className=' p-1 text-light mt-3 buttonbackgraund '> <IoCall /> contact</button>
+                  </div>
 
-    </section>
+                </div>
+              </div>
+            )}
+            <div className="text-center p-0" >
+            <button  className="p-1 mt-3 text-light btn" > <Link to="/product"  className="text-light"  >More product</Link></button>
+            </div>
+      
+          </div>
+          </section>
+
+
+        </section>
+        <section>
+
+        </section>
         <section
           style={{
             display: "flex",
@@ -175,6 +219,7 @@ function App() {
             alignItems: "center",
           }}
           id="sec4"
+          className="formbg"
         >
           <p
             className="p1 mb-4 font-m fw-bold fs-4"
@@ -207,11 +252,12 @@ function App() {
                 </p>
               </div>
               <div className="col-xl-7 col-sm-8 col-md-11  ">
-                <MDBCard>
+                <MDBCard className="transparent-form " >
                   <MDBCardBody>
                     <form
                       action="https://formspree.io/f/mbjnoddw"
                       method="post"
+
                     >
                       <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
                       <MDBRow>
@@ -245,7 +291,7 @@ function App() {
                             name="State"
                             onChange={handleStateChange}
                           >
-                            <option value="" disabled hidden>
+                            <option value="" disabled hidden className=""  >
                               Select a State
                             </option>
                             <option value="">-- Select --</option>
@@ -300,7 +346,7 @@ function App() {
                           />
                         </MDBCol>
                       </MDBRow>
-                      <button className="mt-4" size="lg">
+                      <button className="mt-4 text-light" size="lg">
                         Submit
                       </button>
                     </form>

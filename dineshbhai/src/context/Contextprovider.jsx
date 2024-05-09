@@ -5,52 +5,66 @@ function Contextprovider({ children }) {
   const photos = [
     {
       id: "1",
-      src: "https://floridapolitics.com/wp-content/uploads/2021/01/steel-worker.jpg",
+      src: "https://th.bing.com/th/id/OIP.k0baJL05oKFoXgfjYkeLZAHaFj?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
       width: 4,
       height: 3,
       name: "Steel door",
+      p:"steel bed (queen bed)",
+      price:"RS 22,00/-"
     },
     {
       id: "2",
-      src: "https://images.pexels.com/photos/204275/pexels-photo-204275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://th.bing.com/th/id/OIP.7WdAxGyREPo9yPBoakdqNwHaFR?w=259&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7",
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "3",
-      src: "https://images.pexels.com/photos/207367/pexels-photo-207367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://th.bing.com/th/id/OIP.gzaVIKcqV747LY99fBeQOgHaHa?w=175&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "4",
-      src: "https://images.pexels.com/photos/162529/grinder-hitachi-power-tool-flexible-162529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://3.bp.blogspot.com/-PtmNOO9Q8sw/TsyrEiZjtxI/AAAAAAAAGNM/xvtWFcg0uC8/s1600/steel+metal+furniture+designs.+%25282%2529.jpg",
       width: 4,
       height: 3,
-      name: "Jewelry Software",
+      name: "Metal bed ",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "5",
-      src: "https://i0.wp.com/www.cleantechloops.com/wp-content/uploads/2020/09/steel-interior-decoration-scaled.jpg",
+      src: "https://th.bing.com/th/id/OIP.R2AKyBso6dGMgV9EfDWVygHaHW?rs=1&pid=ImgDetMain",
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "6",
-      src: "https://www.spaceguard.co.uk/wp-content/uploads/2021/01/IMG_20210111_153847.jpg",
+      src: "https://th.bing.com/th/id/OIP.Q5H-bm-20vDaohTqhVsYuwHaFj?rs=1&pid=ImgDetMain",
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "7",
-      src: "https://th.bing.com/th/id/OIP.0l5XzcD6oq0lH3sgIp2XowHaE3?rs=1&pid=ImgDetMain",
+      src: "https://th.bing.com/th/id/OIP.cMwuuCThNt7_eouc1yzJUwHaDj?rs=1&pid=ImgDetMain",
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "8",
@@ -58,13 +72,17 @@ function Contextprovider({ children }) {
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "9",
-      src: "https://th.bing.com/th/id/R.068ab7e99733ba73f081fc72f36f4c63?rik=O33LyWUM8o98yg&riu=http%3a%2f%2fwww.homedepot.com%2fcatalog%2fproductImages%2f1000%2fc1%2fc1f827d0-3d69-46e3-9c4b-e51a83a68c66_1000.jpg&ehk=oKHg2hNkRvyW5nkHDFR5%2bn2JXsmmS67lKiFh4vRCmgg%3d&risl=&pid=ImgRaw&r=0",
+      src: "https://th.bing.com/th/id/OIP.T162brVJi1zsdGqWMrXeqQHaF4?rs=1&pid=ImgDetMain",
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "10",
@@ -72,6 +90,8 @@ function Contextprovider({ children }) {
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "11",
@@ -79,6 +99,8 @@ function Contextprovider({ children }) {
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "12",
@@ -86,6 +108,8 @@ function Contextprovider({ children }) {
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
     {
       id: "13",
@@ -93,6 +117,8 @@ function Contextprovider({ children }) {
       width: 4,
       height: 3,
       name: "Jewelry Software",
+      p:"steel bed (queen bed)",
+      price:"200$"
     },
   ];
 
@@ -100,10 +126,9 @@ function Contextprovider({ children }) {
   const [img, setimg] = useState("");
   const [form, setform] = useState(false);
   const [showfrom, setshow2] = useState("");
-  function imgshow(img) {
+  function imgshow(img){
     setimg(img);
     setshow(true);
-   
   }
   function formshow(name) {
     setshow2(name);
