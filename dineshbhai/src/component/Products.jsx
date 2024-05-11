@@ -11,10 +11,12 @@ import {
   MDBCardText,
   MDBCardImage,
   MDBBtn,
-} from "mdb-react-ui-kit";
+} from "mdb-react-ui-kit"
+
+
 function Products() {
 
-  const { photos, formshow, imgshow } = useContext(Usercontext);
+  const { products, formshow, imgshow } = useContext(Usercontext);
   return (
 
     <div className=" backgraundcolor ">
@@ -42,7 +44,7 @@ function Products() {
 
           </div >
           <div className=' row col-sm-11    d-flex align-items-center justify-content-center px-2 mb-4' s>
-            {photos.map(photo =>
+            {products.map(product =>
             <>
               {/* <div id="" className="col-sm-3    " key={photo.src}>
                 <div className='h-50  border mt-2 bg-white shadow rounded-2'>
@@ -70,24 +72,26 @@ function Products() {
               </div>
               </div> */}
 
-<div id="" className="col-sm-3  px-2 my-2 " key={photo.src}>
+<div id="" className="col-sm-3  px-2 my-2 " key={product.itemName}>
 <MDBCard className="card-container shadow">
   <div className="img-container">
     <MDBCardImage
-      src={photo.src}
+      src={product.imageUrl}
       position="top"
       alt="Image"
       style={{height : "200px"}}
       className="card-img"
-      onClick={() => { imgshow(photo.src) }}
+      onClick={() => { imgshow(product.imageUrl) }}
     />
   </div>
   <MDBCardBody className='p-0 px-3 pt-2 ' style={{height : '80px'}}>
     <MDBCardTitle className="card-title fw-bold" style={{color:'#d90700'}}>
-      {photo.name}
+      {product.itemName}
     </MDBCardTitle>
-    <div className='w-100 d-flex justify-content-center'>
-    <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > inquriy now </button>
+    <p>{product.desc}</p>
+    <div className='w-100 d-flex justify-content-between align-items-center'>
+      <p className=''>{product.price}</p>
+    <p className='p-1 text-light  text-black ' onClick={() => { formshow(product.itemName) }} > inquriy now </p>
     </div>
   </MDBCardBody>
 </MDBCard>
