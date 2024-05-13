@@ -27,9 +27,8 @@ function Header() {
               <Nav.Link ><Link to="/privacypolicy" className='listt text-black' onClick={handleNavLinkClick} >Privacy Policy</Link></Nav.Link>
             </div>
             <div className='contact'>
-              <button><Link to='/contect' className="text-white" onClick={handleNavLinkClick}  >Contact us</Link></button>
+              <button><Link to="/Contact" className='listt text-black' onClick={handleNavLinkClick} >Contact us</Link></button>
             </div>
-            
           </Nav>
         </Navbar.Collapse>
       </Container>

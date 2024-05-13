@@ -41,10 +41,10 @@ p {
   cursor: pointer;
 }
 
-.heading {
+/* .heading {
   -webkit-background-clip: text;
   color: transparent;
-}
+} */
 
 .nav ul {
   display: flex;
@@ -924,12 +924,13 @@ p.awesome_line {
 {
 font-size: 12px;
 }
-.formbg
+/* .formbg
 {
-  background-image: url(../public/image/Neutral\ Minimalist\ Elegant\ Interior\ Zoom\ Virtual\ Background.png) !important;
+  background-image: url(../public/image/backgoundcontectus.jpg) !important;
   background-position: 100%;
-   background-repeat: no-repeat;
-}
+   background-repeat: no-repeat !important;
+
+} */
 .transparent-form {
 
  background-color: rgba(255, 255, 255, 0.5) !important ;  /* Transparent white color */
@@ -943,3 +944,71 @@ font-size: 12px;
   height: 470px !important;
 
 }
+.photo-max-size
+{
+  max-height: 600px;
+}
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icons a {
+  color: #333; /* Icon color */
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+/* Productdetails.css */
+@media (max-width: 767px) {
+  .product-info {
+    font-size: 0.9rem;
+  }
+  .product-price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-info {
+    font-size: 0.8rem;
+  }
+  .product-price {
+    font-size: 1rem;
+  }
+}
+
+.rating-container {
+  margin-top: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icons a {
+  color: #333;
+  font-size: 20px;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+}
+
+.contact-buttons button {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

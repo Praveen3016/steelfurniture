@@ -14,6 +14,8 @@ import Whatsapp from "./component/Whatsapp";
 import ClientNumber from "./component/clientnumber";
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
+import Aboutus from "./component/Aboutus";
+import Offer from "./component/Offers";
 import {
   MDBContainer,
   MDBRow,
@@ -26,11 +28,12 @@ import {
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  const { photos } = useContext(Usercontext);
-  const firstFivePhotos = photos.slice(0, 3);
-
-  const [gradientColor, setGradientColor] = useState("#ff0000"); // Initial color
-
+  const { photos , formshow } = useContext(Usercontext);
+  const firstFivePhotos = photos.slice(0, 6);
+ function  handlecontact () {
+  window.location.href="tel:+9351990014"
+  
+ } 
   useEffect(() => {
     const interval = setInterval(() => {
       const randomColor =
@@ -68,6 +71,8 @@ function App() {
     setSelectedDistrict(e.target.value);
   };
 
+  setInterval(function () {<Offer/>}, 1000);
+
 
   return (
     <>
@@ -86,6 +91,7 @@ function App() {
         </ul>
       </div>
       <Whatsapp />
+      
       <Calllogo />
       <ScrollToTopButton />
       <main>
@@ -127,45 +133,6 @@ function App() {
             {showAll ? " View Less" : "View More"}
           </button>
         </section>
-        <ClientNumber />
-        <section
-          id="sec3"
-          style={{
-            backgroundImage:
-              "linear-gradient(to left,white,white,rgba(255, 160, 122, 0.151))",
-            display: "flex",
-            flexDirection: "row !important",
-          }}
-
-        >
-          <div className="container">
-            <div className="row col-sm-12">
-              <p
-                className="p1 mb-4 font-m fw-bold fs-4"
-                style={{ color: "#d90700" }}
-              >
-                ABOUT US
-              </p>
-              <div className=" col-sm-6">
-                <img src="public\image\tk2.jpg" className="img-fluid" alt="" />
-              </div>
-              <div className="col-sm-6 d-flex align-items-center ">
-                <div>
-                  <h2>Welcome to श्री KSF Steel Factory</h2>
-                  <p id="sec3p3">
-                    We seamlessly merge three key components – Website, Mobile
-                    Application, and Software technology. This is the main
-                    factor that sets us apart from our competition and allows us
-                    to deliver a specialist in our services.
-                  </p>
-                  <div>
-                    <button className="btn p-2"  ><Link to="/about" className="text-white" >Veiw More</Link></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section>
           <section>
             <p
@@ -184,17 +151,19 @@ function App() {
                   >
                     {photo.name}
                   </p>
-                  <img style={{ height: "200px" }}
-                    className="img-fluid  w-100  "
-                    src={photo.src} onClick={() => { imgshow(photo.src) }}
+                  <Link to={`/productdetails/${photo.id}`} style={{ display: "block", width: "100%", height: "200px" }}>
+                  <img style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                    className="img-fluid"
+                    src={photo.src}
                     alt=""
                   />
+                </Link>
                   <div className="border-bottom mt-2  " >
                     <p className="flex-wrap" >{photo.p} <label style={{ color: '#d90700' }} className='mx-2' >{photo.price} </label> </p>
                   </div>
                   <div className="justify-content-between d-flex  " >
                     <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > Inquriy now </button>
-                    <button className=' p-1 text-light mt-3 buttonbackgraund '> <IoCall /> contact</button>
+                    <button className=' p-1 text-light mt-3 buttonbackgraund ' onClick={handlecontact} > <IoCall /> contact</button>
                   </div>
 
                 </div>
@@ -206,12 +175,10 @@ function App() {
       
           </div>
           </section>
-
-
+          <Aboutus/>
+          <ClientNumber />
         </section>
-        <section>
 
-        </section>
         <section
           style={{
             display: "flex",
@@ -357,8 +324,8 @@ function App() {
           </MDBContainer>
         </section>
       </main>
-      {/* <Footer/> */}
-    </>
+
+          </>
   );
 }
 
