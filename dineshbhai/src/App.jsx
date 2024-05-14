@@ -1,7 +1,6 @@
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ScrollToTopButton from "./component/ScrollToTopButton";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Usercontext from "./context/usecontext";
@@ -15,7 +14,6 @@ import ClientNumber from "./component/clientnumber";
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import Aboutus from "./component/Aboutus";
-import Offer from "./component/Offers";
 import {
   MDBContainer,
   MDBRow,
@@ -26,14 +24,15 @@ import {
   MDBTextArea,
 } from "mdb-react-ui-kit";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
-  const { photos , formshow } = useContext(Usercontext);
-  const firstFivePhotos = photos.slice(0, 6);
- function  handlecontact () {
-  window.location.href="tel:+9351990014"
-  
- } 
+  const { photos, formshow } = useContext(Usercontext);
+  const firstFivePhotos = photos.slice(0, 10);
+
+  function handleContact() {
+    window.location.href = "tel:+9351990014";
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       const randomColor =
@@ -46,7 +45,6 @@ function App() {
 
   const [showAll, setShowAll] = useState(false);
   const yourArray = [...cardData];
-
   const renderedItems = showAll ? yourArray : yourArray.slice(0, 4);
 
   const handleViewToggle = () => {
@@ -71,13 +69,19 @@ function App() {
     setSelectedDistrict(e.target.value);
   };
 
-  setInterval(function () {<Offer/>}, 1000);
-
+  const handleNavLinkClick = () => {
+    // Navbar ko band karne ke liye
+    const navbarToggle = document.querySelector('.navbar-toggler');
+    if (navbarToggle && !navbarToggle.classList.contains('collapsed')) {
+      navbarToggle.click();
+    }
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
-      <div class="area">
-        <ul class="circles">
+      <div className="area">
+        <ul className="circles">
           <li></li>
           <li></li>
           <li></li>
@@ -91,12 +95,11 @@ function App() {
         </ul>
       </div>
       <Whatsapp />
-      
       <Calllogo />
       <ScrollToTopButton />
       <main>
         <section id="sec1">
-          <div className=" d-flex align-items-center part1  mt-5 ">
+          <div className="d-flex align-items-center part1 mt-5 ">
             <div className="d-flex flex-column w-sm-50 w-100 ps-1 ps-sm-5  ">
               <h1 className="heading mb-3 mt-2 fw-bold text-warning">
                 श्री KSF Furniture Factory
@@ -110,12 +113,16 @@ function App() {
                 almirahs and office furnishings. Experience excellence with
                 Kheteshwar Steel Furniture.
               </p>
-              <button><Link to='/contect' className="text-white">Contact us</Link></button>
+              <button className="btn p-2">
+                <Link to="/Contact" className="listt text-black">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
         </section>
         <section id="sec2">
-          <h2 style={{ color: "#d90700" }} className="font-m fw-bold">
+          <h2 style={{ color: "chocolate" }} className="font-m fw-bold">
             Services We Offer
           </h2>
           <p id="p2" style={{ maxWidth: "90%" }} className="my-0">
@@ -136,46 +143,77 @@ function App() {
         <section>
           <section>
             <p
-              className="p1 mb-4 font-m fw-bold text-center  fs-4"
-              style={{ color: "#d90700" }}
+              className="p1 mb-4 font-m fw-bold text-center fs-4"
+              style={{ color: "chocolate" }}
             >
               PRODUCT
             </p>
-            <div className=' row col-sm-12 gap-4   d-flex align-items-center justify-content-center px-2 mb-4' s>
-            {firstFivePhotos.map(photo =>
-              <div id="" className="col-sm-3 col-10 h-50 px-1" key={photo.id}>
-                <div style={{ height: "350px" }} className='mt-4' id="card1">
-                  <p
-                    style={{ color: '#d90700' }}
-                    className="d-flex  align-items-center justify-content-center fw-bold fs-6 "
-                  >
-                    {photo.name}
-                  </p>
-                  <Link to={`/productdetails/${photo.id}`} style={{ display: "block", width: "100%", height: "200px" }}>
-                  <img style={{ height: "100%", width: "100%", objectFit: "cover" }}
-                    className="img-fluid"
-                    src={photo.src}
-                    alt=""
-                  />
-                </Link>
-                  <div className="border-bottom mt-2  " >
-                    <p className="flex-wrap" >{photo.p} <label style={{ color: '#d90700' }} className='mx-2' >{photo.price} </label> </p>
+            <div className="row col-sm-12 gap-2 d-flex align-items-center justify-content-center ">
+              {firstFivePhotos.map((photo) => (
+                <div
+                  id=""
+                  className="col-sm-2 col-10 h-50 px-1"
+                  key={photo.id}
+                >
+                  <div style={{ height: "auto" }} className="mt-4" id="card1">
+                    <p
+                      style={{ color: "chocolate" }}
+                      className="d-flex  align-items-center justify-content-center fw-bold fs-6 "
+                    >
+                      {photo.name}
+                    </p>
+                    <Link
+                      to={`/productdetails/${photo.id}`}
+                      style={{
+                        display: "block",
+                        width: "100%",
+                        height: "200px",
+                      }}
+                    >
+                      <img
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          objectFit: "cover",
+                        }}
+                        className="img-fluid"
+                        src={photo.src}
+                        alt=""
+                      />
+                    </Link>
+                    <div
+                      style={{ fontSize: "13px", lineHeight: "15px" }}
+                      className="mt-2  "
+                    >
+                      <p className="flex-wrap">{photo.p}</p>
+                      <div className="d-flex gap-1 ">
+                        <label className="mx-2 fw-medium fs-6">
+                          {photo.price}
+                        </label>
+                        <label
+                          style={{
+                            color: "#9b9b9ba1",
+                            textDecorationLine: "line-through",
+                          }}
+                        >
+                          {photo.offers}
+                        </label>
+                        <label style={{ color: "red" }}>{photo.lessoff}</label>
+                      </div>
+                    </div>
                   </div>
-                  <div className="justify-content-between d-flex  " >
-                    <button className='p-1 text-light mt-3  ' onClick={() => { formshow(photo.name) }} > Inquriy now </button>
-                    <button className=' p-1 text-light mt-3 buttonbackgraund ' onClick={handlecontact} > <IoCall /> contact</button>
-                  </div>
-
                 </div>
+              ))}
+              <div className="text-center p-0">
+                <button className="p-1 mt-5 text-light btn">
+                  <Link to="/product" className="text-light" onClick={{ handleNavLinkClick }} >
+                    More product
+                  </Link>
+                </button>
               </div>
-            )}
-            <div className="text-center p-0" >
-            <button  className="p-1 mt-3 text-light btn" > <Link to="/product"  className="text-light"  >More product</Link></button>
             </div>
-      
-          </div>
           </section>
-          <Aboutus/>
+          <Aboutus />
           <ClientNumber />
         </section>
 
@@ -190,12 +228,12 @@ function App() {
         >
           <p
             className="p1 mb-4 font-m fw-bold fs-4"
-            style={{ color: "#d90700" }}
+            style={{ color: "chocolate" }}
           >
             CONTACT US
           </p>
           <MDBContainer>
-            <MDBRow className="justify-content-center align-items-center ">
+            <MDBRow className="justify-content-center text-light align-items-center ">
               <div className="col-sm-5">
                 <h3>Contact us through</h3>
                 <p>
@@ -214,19 +252,20 @@ function App() {
                   <span>
                     <b>Address : </b>
                   </span>{" "}
-                  <mark>Shree Kheteshwar Steel Furniture</mark> Jawal Post
-                  offices ke pass, Sirohi - Jawal Rd, Jawal, Rajasthan 307801{" "}
+                  <mark>
+                    Shree Kheteshwar Steel Furniture
+                  </mark>{" "}
+                  Jawal Post offices ke pass, Sirohi - Jawal Rd, Jawal,
+                  Rajasthan 307801{" "}
                 </p>
               </div>
               <div className="col-xl-7 col-sm-8 col-md-11  ">
-                <MDBCard className="transparent-form " >
+                <MDBCard className="transparent-form ">
                   <MDBCardBody>
                     <form
                       action="https://formspree.io/f/mbjnoddw"
                       method="post"
-
                     >
-                      <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5"></h3>
                       <MDBRow>
                         <MDBCol md="6">
                           <MDBInput
@@ -251,28 +290,24 @@ function App() {
                       </MDBRow>
                       <MDBRow>
                         <MDBCol md={6} className="mb-4">
-                          {/* <label>Select a State:</label> */}
                           <select
                             className="form-select"
                             value={selectedState}
                             name="State"
                             onChange={handleStateChange}
                           >
-                            <option value="" disabled hidden className=""  >
+                            <option value="" disabled hidden>
                               Select a State
                             </option>
                             <option value="">-- Select --</option>
-                            {stateDistrictsMap.states.map(
-                              (stateData, index) => (
-
-                                <option key={index} value={stateData.state}>
-                                  {stateData.state}
-                                </option>
-                              )
-                            )}
+                            {stateDistrictsMap.states.map((stateData, index) => (
+                              <option key={index} value={stateData.state}>
+                                {stateData.state}
+                              </option>
+                            ))}
                           </select>
                         </MDBCol>
-                        <MDBCol md={6} className="mb-4">
+                        <MDBCol md={6} className="mb-4  ">
                           <select
                             className="form-select"
                             value={selectedDistrict}
@@ -313,9 +348,11 @@ function App() {
                           />
                         </MDBCol>
                       </MDBRow>
-                      <button className="mt-4 text-light" size="lg">
-                        Submit
-                      </button>
+                      <div className="mt-4" >
+                        <button className="btn btn-primary" size="lg">
+                          Submit
+                        </button>
+                      </div>
                     </form>
                   </MDBCardBody>
                 </MDBCard>
@@ -324,8 +361,7 @@ function App() {
           </MDBContainer>
         </section>
       </main>
-
-          </>
+    </>
   );
 }
 

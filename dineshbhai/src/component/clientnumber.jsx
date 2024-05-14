@@ -26,7 +26,7 @@ function ClientNumber() {
         <div class="container">
           <div class="row">
             <div class="section-head col-sm-12">
-              <h4  style={{color: '#d90700'}}>
+              <h4  style={{color: 'chocolate'}}>
                 <span>Why Choose</span> Us?
               </h4>
               <p>

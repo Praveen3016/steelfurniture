@@ -17,7 +17,7 @@ const Aboutus=()=>
             <div className="row col-sm-12">
               <p
                 className="p1 mb-4 font-m fw-bold fs-4"
-                style={{ color: "#d90700" }}
+                style={{ color: "chocolate" }}
               >
                 ABOUT US
               </p>
@@ -26,7 +26,7 @@ const Aboutus=()=>
               </div>
               <div className="col-sm-6 d-flex align-items-center ">
                 <div>
-                  <h2>Welcome to श्री KSF Steel Factory</h2>
+                  <h2 style={{color:"chocolate"}} >Welcome to श्री KSF Steel Factory</h2>
                   <p id="sec3p3">
                     We seamlessly merge three key components – Website, Mobile
                     Application, and Software technology. This is the main

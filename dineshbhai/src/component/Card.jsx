@@ -28,7 +28,7 @@ export default function Card({ props }) {
               />
             </div>
             <MDBCardBody>
-              <MDBCardTitle className="card-title fw-bold" style={{color:'#d90700'}}>
+              <MDBCardTitle className="card-title fw-bold" style={{color:'chocolate'}}>
                 {value.cardTitle}
               </MDBCardTitle>
               <MDBCardText className="card-desc">{value.title}</MDBCardText>

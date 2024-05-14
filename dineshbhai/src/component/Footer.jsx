@@ -4,7 +4,7 @@ const Footer = () => {
   return (
        <footer>
         <MDBFooter
-          bgColor="light"
+          
           className="text-center text-lg-start text-muted"
         >
           <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -33,7 +33,7 @@ const Footer = () => {
               </a>
             </div>
           </section>
-          <section className="">
+          <section style={{color:"chocolate"}}>
             <MDBContainer className="text-center text-md-start mt-5">
               <MDBRow className="mt-3">
                 <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
